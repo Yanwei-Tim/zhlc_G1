@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    android:orientation="vertical" >
+
+    
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 布局第一栏 -->
+            <!-- 最外层圆角 -->
+
+            <LinearLayout style="@style/wrap_layout" >
+
+                <!-- 上圆角 -->
+
+                <LinearLayout
+                    android:id="@+id/i_ll_setsimnumber"
+                    style="@style/btn_layout" >
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="个人资料" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/setting_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 分割线 -->
+
+                <View style="@style/bg_line" />
+                <!-- 下圆角 -->
+
+                <LinearLayout
+                    android:id="@+id/i_ll_btswitch"
+                    style="@style/btn_layout" >
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="相册" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/setting_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 布局第二栏 -->
+
+
+            <!-- 最外层圆角 -->
+
+            <LinearLayout style="@style/wrap_layout" >
+
+                <!-- 上圆角 -->
+
+                <LinearLayout
+                    android:id="@+id/i_ll_callmode"
+                    style="@style/btn_layout" >
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="历史轨迹" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/setting_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 分割线 -->
+
+                <View style="@style/bg_line" />
+                <!-- 下圆角 -->
+
+                <LinearLayout
+                    android:id="@+id/i_ll_aboutsoftware"
+                    style="@style/btn_layout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="关于我们" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/setting_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/bg_line" />
+<LinearLayout
+                    android:id="@+id/i_ll_locmode"
+                    style="@style/btn_layout" >
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="设置" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/setting_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/bg_line" />
+                <LinearLayout
+                    android:id="@+id/i_ll_offalarm"
+                    style="@style/btn_layout" >
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="设置" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/setting_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 布局第三栏 -->
+
+
+            <!-- 最外层圆角 -->
+
+            <LinearLayout style="@style/wrap_layout_plus"
+                android:visibility="gone" >
+
+                <!-- 全圆角 -->
+
+                <LinearLayout
+                    android:id="@+id/i_ll_closesoftware"
+                    style="@style/btn_layout" >
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="关于我们" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/setting_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

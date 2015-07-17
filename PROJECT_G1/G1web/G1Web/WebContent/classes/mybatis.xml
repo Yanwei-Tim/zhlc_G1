@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC 
+	"-//mybatis.org//DTD Config 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<!-- 查询 -->
+		<typeAlias alias="SearchDTO" type="com.zhlc.common.codec.SearchDTO" />
+		
+		<!-- 用户 -->
+		<typeAlias alias="userDTO" type="com.zhlc.app.dto.UserDTO" />
+	</typeAliases>
+	 
+	<mappers>
+		<!-- 用户 -->
+		<mapper resource="mybatis/app/user.xml" />
+		<!-- 验证码操作 -->
+		<mapper resource="mybatis/app/util.xml" />
+		<!-- 激活码操作 -->
+		<mapper resource="mybatis/app/activityCode.xml" />
+	</mappers>
+</configuration>	

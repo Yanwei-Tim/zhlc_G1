@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/frgact_main_title" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        style="@style/ww"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/act_name_edit_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/act_weixin_pay_020" />
+
+        <TextView
+            android:id="@+id/tv_weixin_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="微信充值"
+            android:textColor="@color/bb_cyan"
+            android:textSize="@dimen/text_size_bigger" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        style="@style/ww"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/linearlayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/act_name_edit_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_play_bao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/act_pay_alipay" />
+
+        <TextView
+            android:id="@+id/tv_weixin_play1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="充值"
+            android:textColor="@color/bb_cyan"
+            android:textSize="@dimen/text_size_bigger" />
+    </LinearLayout>
+
+</RelativeLayout>

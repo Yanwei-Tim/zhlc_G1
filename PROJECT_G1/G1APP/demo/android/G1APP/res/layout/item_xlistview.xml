@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="300dp" >
+
+        <ImageButton
+            android:id="@+id/ibtn_xlistitem_pic"
+            android:layout_width="100dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lauch" />
+
+        <TextView
+            android:id="@+id/tv_xlistview_name"
+            style="@style/blue_text"
+            android:layout_alignBottom="@+id/ibtn_xlistitem_pic"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ibtn_xlistitem_pic"
+            android:text="超级大好人" />
+
+        <TextView
+            android:id="@+id/tv_xlistview_text"
+            style="@style/dark_text"
+            android:layout_alignLeft="@+id/tv_xlistview_name"
+            android:layout_below="@+id/ibtn_xlistitem_pic"
+            android:layout_marginTop="10dp"
+            android:text="超级大好人" />
+
+        <ImageView
+            android:id="@+id/iv_xlistview_content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignLeft="@id/tv_xlistview_text"
+            android:layout_below="@+id/tv_xlistview_text"
+            android:layout_marginRight="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/man" />
+
+        <ImageButton
+            android:id="@+id/ibtn_xlistview_good"
+            style="@style/ibtn"
+            android:layout_alignRight="@+id/iv_xlistview_content"
+            android:layout_below="@+id/iv_xlistview_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/good" />
+
+        <ImageButton
+            android:id="@+id/ibtn_xlistview_comment"
+            style="@style/ibtn"
+            android:layout_alignBottom="@+id/ibtn_xlistview_good"
+            android:layout_toLeftOf="@+id/ibtn_xlistview_good"
+            android:src="@drawable/comment" />
+
+        <LinearLayout
+            android:id="@+id/llyt_xlistview_comment"
+            style="@style/mw"
+            android:layout_alignLeft="@id/iv_xlistview_content"
+            android:layout_alignRight="@id/iv_xlistview_content"
+            android:layout_below="@+id/ibtn_xlistview_comment"
+            android:background="@drawable/bg_comment"
+            android:minHeight="20dp"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

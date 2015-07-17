@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_space"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_title" >
+
+        <Button
+            android:id="@+id/btn_space_back"
+            style="@style/style_title_button"
+            android:layout_alignParentLeft="true"
+            android:drawableTop="@drawable/selector_frgact_main_title_back" />
+
+        <TextView
+            android:id="@+id/tv_space_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/space"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llyt_space_photo"
+        style="@style/mw"
+        android:layout_height="@dimen/space_item_height"
+        android:layout_marginLeft="@dimen/set_marginleft"
+        android:layout_marginRight="@dimen/set_marginleft"
+        android:layout_marginTop="@dimen/set_margintop"
+        android:background="@drawable/selector_item_select"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/set_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/photo"
+            android:textSize="@dimen/text_size_bigger" />
+
+        <ImageButton
+            android:id="@+id/ibtn_space_photo_delete"
+            style="@style/ibtn"
+            android:src="@drawable/selector_act_space_delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llyt_space_film"
+        style="@style/mw"
+        android:layout_height="@dimen/space_item_height"
+        android:layout_marginLeft="@dimen/set_marginleft"
+        android:layout_marginRight="@dimen/set_marginleft"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_item_select"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/set_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/film"
+            android:textSize="@dimen/text_size_bigger" />
+
+        <ImageButton
+            android:id="@+id/ibtn_space_film_delete"
+            style="@style/ibtn"
+            android:src="@drawable/selector_act_space_delete" />
+    </LinearLayout>
+
+</LinearLayout>

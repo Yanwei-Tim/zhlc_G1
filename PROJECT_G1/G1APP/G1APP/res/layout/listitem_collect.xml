@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp" >
+
+        <RelativeLayout
+            android:id="@+id/rlyt_collect_listitem_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp" >
+
+            <ImageButton
+                android:id="@+id/ibtn_collect_xlistitem_pic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/cb_collect_xlistitem_check"
+                android:background="@drawable/ic_launcher"
+                android:scaleType="fitXY" />
+
+            <CheckBox
+                android:id="@+id/cb_collect_xlistitem_check"
+                style="@style/ww"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_act_collect_checkbox"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_collect_xlistview_name"
+                style="@style/set_text"
+                android:layout_alignTop="@+id/ibtn_collect_xlistitem_pic"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ibtn_collect_xlistitem_pic"
+                android:text="超级大好人"
+                android:textColor="@color/bb_green"
+                android:textSize="@dimen/text_size_middle" />
+
+            <TextView
+                android:id="@+id/tv_xlistview_loc"
+                style="@style/ww"
+                android:layout_alignBottom="@+id/ibtn_collect_xlistitem_pic"
+                android:layout_alignLeft="@+id/tv_collect_xlistview_name"
+                android:drawableLeft="@drawable/loc_mini"
+                android:text="广东省深圳市福田区福田口岸"
+                android:textColor="@color/bb_gray3"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_xlistview_date"
+                style="@style/ww"
+                android:layout_alignBottom="@+id/ibtn_collect_xlistitem_pic"
+                android:layout_alignParentRight="true"
+                android:text="今天"
+                android:textColor="@color/bb_gray3"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_collect_xlistview_text"
+                style="@style/set_text"
+                android:layout_alignLeft="@+id/tv_collect_xlistview_name"
+                android:layout_below="@+id/ibtn_collect_xlistitem_pic"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="@dimen/item_border"
+                android:text="今天又遇到碰瓷的了，請大家注意這個人！！、憤怒"
+                android:textSize="@dimen/text_size_middle" />
+
+            <ImageView
+                android:id="@+id/iv_collect_xlistview_content"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignLeft="@+id/tv_collect_xlistview_name"
+                android:layout_below="@+id/tv_collect_xlistview_text"
+                android:scaleType="fitXY"
+                android:src="@drawable/man" />
+
+            <ImageButton
+                android:id="@+id/ibtn_collect_listitem_good"
+                style="@style/ibtn"
+                android:layout_alignBottom="@+id/ibtn_collect_listitem_comment"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/ibtn_collect_listitem_comment"
+                android:padding="5dp"
+                android:src="@drawable/selector_good" />
+
+            <TextView
+                android:id="@+id/tv_collect_listitem_good_value"
+                style="@style/ww"
+                android:layout_alignBottom="@+id/ibtn_collect_listitem_good"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="-29dp"
+                android:layout_toRightOf="@+id/ibtn_collect_listitem_good"
+                android:gravity="bottom"
+                android:text="20"
+                android:textColor="@color/bb_gray1" />
+
+            <ImageButton
+                android:id="@+id/ibtn_collect_listitem_comment"
+                style="@style/ibtn"
+                android:layout_alignRight="@+id/iv_collect_xlistview_content"
+                android:layout_below="@+id/iv_collect_xlistview_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:src="@drawable/selector_comment" />
+
+            <TextView
+                android:id="@+id/tv_collect_listitem_comment_value"
+                style="@style/ww"
+                android:layout_alignBottom="@+id/ibtn_collect_listitem_comment"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_toRightOf="@+id/ibtn_collect_listitem_comment"
+                android:text="10"
+                android:textColor="@color/bb_gray1" />
+
+            <ImageButton
+                android:id="@+id/ibtn_collect_listitem_collect"
+                style="@style/ibtn"
+                android:layout_alignBottom="@+id/ibtn_collect_listitem_comment"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/ibtn_collect_listitem_good"
+                android:padding="5dp"
+                android:src="@drawable/selector_collect" />
+
+            <LinearLayout
+                android:id="@+id/llyt_collect_listitem_comment"
+                style="@style/mw"
+                android:layout_alignLeft="@id/iv_collect_xlistview_content"
+                android:layout_alignRight="@id/iv_collect_xlistview_content"
+                android:layout_below="@+id/ibtn_collect_listitem_comment"
+                android:background="@drawable/bg_comment"
+                android:minHeight="20dp"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    style="@style/ww"
+                    android:text="超级大坏蛋 : "
+                    android:textColor="@color/bb_green" />
+
+                <TextView
+                    style="@style/set_text"
+                    android:layout_marginLeft="0dp"
+                    android:text="我也碰到了一个，但是好帅啊"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_collect_listitem_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listitem_line_height"
+            android:layout_below="@+id/rlyt_collect_listitem_main"
+            android:layout_marginTop="10dp"
+            android:background="@color/darktextcolor" />
+    </RelativeLayout>
+
+</LinearLayout>

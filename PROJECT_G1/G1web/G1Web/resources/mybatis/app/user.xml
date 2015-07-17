@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zhlc.app.dao.IUserDao">
+
+	<!-- 用户注册 注册的SQL -->
+	<insert id="insert" parameterType="Map">
+		<![CDATA[
+			INSERT INTO t_user(
+				user_name,
+				user_pass,
+				car_type,
+				type,
+				create_time
+			)VALUES(
+				#{user_name},
+				#{user_pass},
+				#{car_type},
+				#{type},
+				now()
+			)
+		]]>
+	</insert>
+
+	<!-- 插入激活码 -->
+	<update id="insert_user_bind" parameterType="Map">
+<![CDATA[
+ 	INSERT INTO g1_user_bind(
+				u_id,
+				g1_imei,
+				activation_code,
+				g1_key,
+				active_time
+			)VALUES(
+				#{u_id},
+				#{g1_imei},
+				#{activation_code},
+				#{g1_key},
+				now()
+			)
+]]>
+	</update>
+	<!-- 根据用户名获取用户uid -->
+	<select id="queryUIdByUserName" resultType="String"
+		parameterType="map">
+		<![CDATA[
+			select id from t_user where user_name= #{user_name}
+		]]>
+	</select>
+
+<!-- 根据激活码获取设备imei  -->
+	<select id="queryImeiByActivationCode" resultType="java.util.HashMap"
+		parameterType="map">
+		<![CDATA[
+			select Imei,activation_code from imei_bind_activationcode where activation_code= #{activation_code}
+		]]>
+	</select>
+
+	<!-- 用户登录 -->
+	<select id="queryByMap" resultType="java.util.HashMap"
+		parameterType="map">
+		<![CDATA[
+			select id,user_name,nick_name,car_type,type,create_time from t_user where state = '1' and user_name = #{user_name} and user_pass = #{user_pass}
+		]]>
+	</select>
+
+	<!-- 判断用户名是否已注册 -->
+	<select id="checkSign" resultType="String" parameterType="map">
+		<![CDATA[
+			select count(0) from t_user where user_name = #{user_name}
+		]]>
+	</select>
+
+	<!-- 记录用户登录错误日志 -->
+	<insert id="insertLoginLog" parameterType="Map">
+		<![CDATA[
+			INSERT INTO t_user_log(
+				user_name,
+				login_time,
+				state
+			)VALUES(
+				#{user_name},
+				now(),
+				#{state}
+			)
+		]]>
+	</insert>
+
+	<!-- 判断用户登录错误次数 -->
+	<select id="getLoginError" resultType="String" parameterType="map">
+		<![CDATA[
+			select count(0) from t_user_log where state = '0' and user_name = #{user_name} and DATE_FORMAT(login_time,'%Y-%m-%d') = #{login_time}
+		]]>
+	</select>
+
+</mapper>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_about"
+        layout="@layout/frgact_main_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/ww"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/item_marginleft"
+                android:src="@drawable/aboutus" />
+
+            <LinearLayout
+                style="@style/mm"
+                android:layout_marginLeft="@dimen/item_marginleft"
+                android:layout_marginRight="@dimen/item_marginleft"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llyt_aboutus_versioninfo"
+                    style="@style/subset_item" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/item_marginleft"
+                        android:layout_weight="1"
+                        android:text="@string/versioninfo" />
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_version"
+                        style="@style/set_text_version"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="5dp"
+                        android:text="1.0.1" />
+
+                    <ImageView
+                        style="@style/ww"
+                        android:layout_marginRight="@dimen/listitem_go_marginright"
+                        android:src="@drawable/act_set_go" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llyt_aboutus_intruduce"
+                    style="@style/subset_item" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/item_marginleft"
+                        android:layout_weight="1"
+                        android:text="@string/intruduce" />
+
+                    <ImageView
+                        style="@style/ww"
+                        android:layout_marginRight="@dimen/listitem_go_marginright"
+                        android:src="@drawable/act_set_go" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llyt_aboutus_fast"
+                    style="@style/subset_item" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/item_marginleft"
+                        android:layout_weight="1"
+                        android:text="@string/fast" />
+
+                    <ImageView
+                        style="@style/ww"
+                        android:layout_marginRight="@dimen/listitem_go_marginright"
+                        android:src="@drawable/act_set_go" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llyt_aboutus_service"
+                    style="@style/subset_item" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/item_marginleft"
+                        android:layout_weight="1"
+                        android:text="@string/service" />
+
+                    <ImageView
+                        style="@style/ww"
+                        android:layout_marginRight="@dimen/listitem_go_marginright"
+                        android:src="@drawable/act_set_go" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llyt_aboutus_feedback"
+                    style="@style/subset_item" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/item_marginleft"
+                        android:layout_weight="1"
+                        android:text="@string/feedback" />
+
+                    <ImageView
+                        style="@style/ww"
+                        android:layout_marginRight="@dimen/listitem_go_marginright"
+                        android:src="@drawable/act_set_go" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llyt_aboutus_update"
+                    style="@style/subset_item" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/item_marginleft"
+                        android:layout_weight="1"
+                        android:text="@string/update" />
+
+                    <ImageView
+                        style="@style/ww"
+                        android:layout_marginRight="@dimen/listitem_go_marginright"
+                        android:src="@drawable/act_set_go" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llyt_aboutus_contactus"
+                    style="@style/subset_item" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/item_marginleft"
+                        android:layout_weight="1"
+                        android:text="@string/contactus" />
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="5dp"
+                        android:text="0793-2686545" />
+
+                    <ImageView
+                        style="@style/ww"
+                        android:layout_marginRight="@dimen/listitem_go_marginright"
+                        android:src="@drawable/act_set_go" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/ww"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="@dimen/item_marginleft"
+                    android:gravity="center"
+                    android:text="@string/company"
+                    android:textColor="@color/bb_gray2"
+                    android:textSize="@dimen/text_size_middle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

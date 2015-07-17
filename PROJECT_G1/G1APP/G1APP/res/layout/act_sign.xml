@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_sign"
+        layout="@layout/frgact_main_title" />
+
+    <EditText
+        android:id="@+id/edit_sign"
+        style="@style/mw"
+        android:layout_below="@+id/title_sign"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left|top"
+        android:layout_marginTop="20dp"
+                  android:textCursorDrawable="@drawable/password_cursor" 
+        android:textSize="@dimen/text_size_bigger"
+        android:background="@drawable/act_sign_edit_bg"
+        android:padding="10dp" />
+
+    <TextView
+        style="@style/set_text"
+        android:layout_alignBottom="@+id/edit_sign"
+        android:layout_alignRight="@+id/edit_sign"
+        android:padding="5dp"
+        android:text="25"
+        android:textSize="@dimen/smalltextsize" />
+
+</RelativeLayout>

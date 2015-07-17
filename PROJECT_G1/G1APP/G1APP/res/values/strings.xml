@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">G1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="car_state">Car State</string>
+    <string name="camera">Camera</string>
+    <string name="community">Community</string>
+    <string name="settings">Settings</string>
+    <string name="set">Settings</string>
+    <string name="Wifi_Fi">Wi-Fi</string>
+    <string name="pass">Pass</string>
+    <string name="finish">Finish</string>
+    <string name="hint_getverif">Input verification</string>
+    <string name="getverif">Get verification</string>
+    <string name="sendverif">Send verification</string>
+    <string name="send">Send</string>
+    <string name="sure">Sure</string>
+    <string name="registerg1">Register G1</string>
+    <string name="set_password">Set password</string>
+    <string name="confire_password">Confire Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="history_track">History Track</string>
+    <string name="temp">Inner Temputure</string>
+    <string name="airpressure">AirPressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="ultraviolet">Ultraviolet</string>
+    <string name="start">Start</string>
+    <string name="distance">Distance</string>
+    <string name="distancem">km</string>
+    <string name="day">d</string>
+    <string name="hour">h</string>
+    <string name="timeoffset">Timeoffset</string>
+    <string name="speed">Speed</string>
+    <string name="speedm">km/h</string>
+    <string name="navi">Navi</string>
+    <string name="video">Video</string>
+    <string name="image">Image</string>
+    <string name="xlistview_header_hint_normal">Pull to refresh</string>
+    <string name="xlistview_header_hint_ready">Loosen to refresh</string>
+    <string name="xlistview_header_hint_loading">Loading...</string>
+    <string name="xlistview_header_last_time">Last UpdateTime：</string>
+    <string name="xlistview_footer_hint_normal">More</string>
+    <string name="xlistview_footer_hint_ready">Loosen to refresh more</string>
+    <string name="source">Input Source</string>
+    <string name="dest">Input Destination</string>
+    <string name="cancle">取消</string>
+    <string name="Sure">确认</string>
+    <string name="sureloginout">Login out ?</string>
+    <string name="hint_phone">phone number</string>
+    <string name="hint_password">password</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="account">Account：</string>
+    <string name="gender">Gender</string>
+    <string name="man">Man</string>
+    <string name="simplified">Simplified</string>
+    <string name="traditional">Traditional</string>
+    <string name="english">English</string>
+    <string name="woman">Woman</string>
+    <string name="secret">Secret</string>
+    <string name="sign">Sign</string>
+    <string name="position">Position</string>
+    <string name="change_position">Change position</string>
+    <string name="location">Location</string>
+    <string name="all">All</string>
+    <string name="photo">Take photo</string>
+    <string name="pickfrommobile">Select from the mobile phone album</string>
+    <string name="album">Album</string>
+    <string name="about">About us</string>
+    <string name="carmodel">Car model</string>
+    <string name="person">Personal info</string>
+    <string name="help">Help</string>
+    <!-- login end -->
+    <string name="camera_connect">Camera connect</string>
+    <string name="camera_not_connect">Camera not connect</string>
+    <string name="appstore">App Store</string>
+    <string name="language">Language</string>
+    <string name="offline_map">Offline Map</string>
+    <string name="auto_download">Auto download photo File</string>
+    <string name="connect_first">Please connect first</string>
+    <string name="reserved_space_available">Reserved space available</string>
+    <string name="mb">MB</string>
+    <string name="gb">GB</string>
+    <string name="reserved_space_available_hint">If the remaining storage space is reserved for small space available, the program will no longer Download</string>
+    <string name="total_space">Total capacity</string>
+    <string name="available">Available</string>
+    <string name="other">Other</string>
+    <string name="g1info">G1 occupies only%1s memory space, the proposed clean-up of other mobile phone applications and data</string>
+    <string name="look_space">Viewing storage space</string>
+    <string name="space">storage space</string>
+    <string name="picture">Picture</string>
+    <string name="film">Film</string>
+    <string name="collect">Collect</string>
+    <string name="search">Search</string>
+    <string name="edit">Edit</string>
+
+    <!-- login end -->
+    <!-- qr二维码 -->
+    <string name="san_text">将二维码放入扫描框</string>
+    <string name="bound_G1">绑定G1</string>
+    <string name="input_pouduct_number">输入产品序列号</string>
+    <string name="input_sequence_sure">确认</string>
+    <string name="scan_product_Number">扫描设备上的二维码</string>
+    <string name="else_input_product_Number">或者输入产品的序列号</string> <!-- aboutus start -->
+    <string name="versioninfo">Version infomation</string>
+    <string name="intruduce">Features</string>
+    <string name="contactus">Contact us</string>
+    <string name="fast">Getting Started</string>
+    <string name="problem">Common problem</string>
+    <string name="operation">Operation Manual</string>
+    <string name="service">Service terms</string>
+    <string name="feedback">Question feedback</string>
+    <string name="update">Updated version</string>
+    <string name="upgrade">Found new version </string>
+    <string name="upgrade_latter">Latter</string>
+    <string name="upgrade_now">Upgrade now</string>
+    <string name="company">中和联创（隆泰）智能科技有限公司</string>
+    <string name="wifi">WiFi management</string>
+    <string name="common">Common</string>
+    <string name="changepassword">Change password</string>
+    <string name="loginout">Loginout</string>
+    <!-- 更改系统设置 -->
+    <string name="Save_Manger">存储管理</string>
+    <string name="zidong_xiazai_poaizao">自动下载拍照</string>
+    <string name="Sound">声音</string>
+    <string name="languanger">语言</string>
+    <string name="offline_map_update">离线地图</string>
+    <string name="tracking">震动</string>
+    <string name="update_password">修改密码</string>
+    <string name="Canle">注销</string>
+    <string name="receiver_warming_notice">接收紧急通知</string>
+    <string name="receiver_share_track_notice">接收分享轨迹通知</string>
+    <string name="receiver_news_Message">接收新消息通知</string>
+    <string name="Clear_history_track">清空历史纪录</string>
+    <string name="System_Seting_Notice">通知</string>
+    <string name="System_Seting_Waring">提醒</string>
+    <string name="System_Aboutof_Us">关于我们</string>
+    <string name="Notice_to_Net">2G/3G/4G联网情况下提示</string>
+    <string name="Above_WiFi_Net">仅Wi-Fi联网</string>
+    <!-- aboutus end -->
+
+    <string name="head">Head</string>
+    <string name="phone">Phone</string>
+    <string name="receiveurgentcall">Receive an urgent call</string>
+    <string name="receivehistoryshare">Receive history share</string>
+    <string name="receivenews">Receive news</string>
+    <string name="voice">Voice</string>
+    <string name="shock">Shock</string>
+    <string name="messagefontsize">Message font size</string>
+    <string name="unitlength">Unit length</string>
+    <string name="clearmessage">Clear message</string>
+    <string name="big">Big</string>
+    <string name="normal">Normal</string>
+    <string name="small">Small</string>
+    <string name="metric">Metric</string>
+    <string name="inch">Inch</string>
+    <string name="confire_last_password">Confire password</string>
+    <string name="input_last_password">Input last password</string>
+
+    <!-- WIFIMANGER INTERFACEBOOK -->
+    <string name="Connectoned_Phone">已连接手机</string>
+    <string name="Supper_GoodPerson">超级好人</string>
+    <string name="Supper_BadPerson">超级坏人</string>
+    <string name="Two_Phone_Conecting">两台手机已连接</string>
+    <string name="WIFi_Password">WIFI密码：</string>
+    <string name="WIFI_Name">WIFI名称：</string>
+    <string name="WIFI_Hint_Name">输入你喜欢的名字</string>
+    <string name="WIFI_Hint_Ch">输入你喜欢数字号码</string>
+    <string name="Show_Password">显示密码</string>
+    <string name="Hide_Password">隐藏密码</string>
+    <string name="Update_Wifi_Save">保存</string>
+    <string name="Update_Wifi_Canle">取消</string>
+    <string name="Update_Wifi_Update">修改</string>
+    <string name="Input_Play_money">请输入充值金额</string>
+    <string name="Atonce_play">立即充值</string>
+    <string name="Clearn_Recley">清空缓存</string>
+    <!-- android act_flow -->
+    <string name="Tv_G1_Product">G1设备：108873130</string>
+    <string name="Tv_Hint_SM">SIM 4G卡激活时间：2015.06.25</string>
+    <string name="Tv_Hint_MIS4G1">SIM 4G卡激活时间:2015.06.25</string>
+    <string name="Tv_Flow_Manger">流量使用情况</string>
+    <string name="Tv_Month_Flow">本月已用流量 330M</string>
+    <string name="Tv_Once_Flow">当前剩余流量 330M</string>
+    <string name="Tv_Sum_Flow">总流量 5000M</string>
+    <string name="Tv_Show_Context">\n提示:再SIM 4G卡有效期间，如果流量使用完，则有效期提前结束</string>
+    <string name="unkown">Unkown version</string>
+    <string name="hint_feedback">Enter your suggestion, we will continue to improve our products for you</string>
+    <string name="hint_feedback_phone">Your phone number</string>
+    <string name="services">\t请务必认真阅读和理解本《Gobabymobile软件产品许可使用协议》（以下简称《协议》）中规定的所有权利和限制。除非您接收本《协议》条款，否则您无权下载、安装或使用Gobabymobile软件（以下简称"本软件"）及其相关服务。您一旦安装、复制、下载、访问或以其它方式使用本软件产品，将视为对本《协议》的接受，即表示您同意接受本《协议》各项条款的约束。如果您不同意本《协议》中的条款，请不要安装、复制或使用本软件。
+\n本《协议》是用户与深圳市中和隆泰有限公司(下称 "Gobabymobile" )之间关于用户下载、安装、使用、复制随附本《协议》的软件法律协议。
+\n一、	\t\t权利声明
+\n本软件的一切知识产权，以及与软件相关的所有信息内容，包括但不限于：文字表述及其组合、图标、图饰、图像、图标、色彩、界面设计、版面框架、有关数据、附加程序、印刷材料或电子文档等均为Gobabymobile所有，著作权和国际著作权条约以及其他知识产权法律法规的保护。
+\n二、	\t\t许可范围
+\n2.1安装和使用：本软件为随 " Gobabymobile " （以下简称"硬件设备"）的配套使用软件，用户需与"硬件设备"一起方可使用本软件。
+\n2.2复制、分发和传播：用户可以非商业性、无限制数量地复制、分发和传播本软件产品。但必须保证每一份复制、分发和传播都是完整和真实的，包括所有关本软件产品的软件、电子文档，版权和商标，亦包括本协议。如用户超越本许可范围，对本软件各项服务进行销售或用于其他商业用途，Gobabymobile有权不通知用户立即终止向用户提供产品和服务，并依法追究其法律责任，要求其赔偿Gobabymobile的一切损失。\n</string>
+    <string name="fast_room">\n1. 内置无线WIFI发射模块，所以即使没有屏幕也可以连接手机和平板电脑来查看行车视频
+\n\n2. 在与手机连接之前我们需要为手机安装应用程序
+\n\n3. 程序安装成功后，我们需要将至手机。主机的WIFI键按下即为开启WIFI，此时WIFI指示灯一周的蓝色荧光灯闪烁，打开手机WIFI后可以搜索到WIFI热点。此时输入
+\n\n4.应用程序不仅是为了查看校正行车角度，还为我们带来了行车记录仪基本的设置菜单。音频等常见的行车记录选项，而且通过手机操作非常顺应我们现在的操作习惯，体现出了产品的人性化和创新亮点。。
+\n\n5. 如果您的SIM 卡开启了PIN 码验证功能，请在管理网页的设置页面输入正确的PIN\n</string>
+    <string name="fun">1、状况：支持4G网络，随时随地打开手机APP，不需要汽车启动，就能瞬间看到车内车外一切，车窗是否关好，汽车是否安全，体验身临其境的感觉
+
+\n\n2、	视角：实时浏览行车画面、将行车记录仪录像下载到手机或PAD、查看视频预览、回放抓拍图片。
+
+\n\n3、圈子：旅途抓拍美景可以分享给多位朋友、家人，只要手机装上APP应用程序，就能和你朋友、家人一起分享，每一个动人时刻你都可以与他们实时分享。\n</string>
+    <string name="please_input_phone">Please input phone</string>
+    <string name="Car_trim_Number">奔驰</string>
+    <string name="Product_Seting">设备设置</string>
+    <string name="System_Seting">系统设置</string>
+
+</resources>

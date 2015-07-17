@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/bg_dark" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/frgact_main_title" />
+
+    <RelativeLayout
+        style="@style/mw"
+        android:layout_marginLeft="@dimen/smss_marginright"
+        android:layout_marginRight="@dimen/smss_marginright"
+        android:gravity="center"
+        android:layout_marginTop="100dp" >
+
+        <EditText
+            android:id="@+id/et_sequence_number"
+            style="@style/mw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_smss_verifi"
+            android:hint="@string/input_pouduct_number"
+            android:textColor="@android:color/white" 
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="40dp"/>
+
+        <Button
+            android:id="@+id/btn_login_sure"
+            style="@style/ww"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/et_sequence_number"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_smss_sure"
+            android:text="@string/input_sequence_sure"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</FrameLayout>

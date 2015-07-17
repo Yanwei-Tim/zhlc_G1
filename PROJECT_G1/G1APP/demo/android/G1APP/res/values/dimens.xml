@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="textsize">20sp</dimen>
+    <dimen name="smalltextsize">15sp</dimen>
+    <dimen name="bigtextsize">30sp</dimen>
+
+    <integer name="num_cols">1</integer>
+
+    <dimen name="car_hot_width">50dp</dimen>
+    <dimen name="car_hot_height">25dp</dimen>
+    <dimen name="car_para_height">120dp</dimen>
+    <dimen name="car_bottom_height">100dp</dimen>
+    <dimen name="real_add_width">30dp</dimen>
+    <dimen name="menu_head_height">120dp</dimen>
+    <dimen name="menu_head_width">100dp</dimen>
+    <dimen name="menu_listitemheight">80dp</dimen>
+    <dimen name="navi_input_width">200dp</dimen>
+    <dimen name="menu_head_marginleft">30dp</dimen>
+    <dimen name="login_marginright">50dp</dimen>
+    <dimen name="login_line_width">170dp</dimen>
+    <dimen name="person_item_height">70dp</dimen>
+
+</resources>

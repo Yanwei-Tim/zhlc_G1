@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlyt_photo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_photo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_title" >
+
+        <Button
+            android:id="@+id/btn_photo_back"
+            style="@style/style_title_button"
+            android:layout_alignParentLeft="true"
+            android:drawableTop="@drawable/selector_frgact_main_title_back" />
+
+        <TextView
+            android:id="@+id/tv_photo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/photo"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_photo"
+        style="@style/mw"
+        android:layout_below="@+id/title_photo"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="5"
+        android:verticalSpacing="-5dp" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_photo_bottom"
+        style="@style/mw"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="20dp" >
+
+        <ImageButton
+            android:id="@+id/ibtn_photo_photo"
+            style="@style/ibtn"
+            android:src="@drawable/selector_photo" />
+
+        <ImageButton
+            android:id="@+id/ibtn_photo_delete"
+            style="@style/ibtn"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/selector_act_collect_delete" />
+    </RelativeLayout>
+
+</RelativeLayout>

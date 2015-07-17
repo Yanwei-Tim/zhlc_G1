@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="car_hot_width">50dp</dimen>
+    <dimen name="car_hot_height">30dp</dimen>
+    <dimen name="car_para_height">120dp</dimen>
+    <dimen name="car_bottom_height">85dp</dimen>
+    <dimen name="real_play_width">100dp</dimen>
+    <dimen name="real_play_height">100dp</dimen>
+    <dimen name="bigtextsize">25sp</dimen>
+    <dimen name="menu_listitemheight">50dp</dimen>
+    <dimen name="navi_input_width">100dp</dimen>
+    <dimen name="menu_head_marginleft">10dp</dimen>
+    <dimen name="login_marginright">50dp</dimen>
+    <dimen name="login_line_width">60dp</dimen>
+    <dimen name="listitem_line_height">1dp</dimen>
+    <dimen name="dialog_connect_width">270dp</dimen>
+        <dimen name="dialog_connectfirst_width">230dp</dimen>
+    <dimen name="dialog_password_height">180dp</dimen>
+    <dimen name="dialog_password_edit_width">240dp</dimen>
+    <dimen name="dialog_password_edit_height">40dp</dimen>
+    <dimen name="dialog_connect_height">100dp</dimen>
+    <dimen name="loginout_marginbottom">10dp</dimen>
+    <dimen name="password_marginbottom">10dp</dimen>
+    <dimen name="appstore_space">35dp</dimen>
+
+    <!-- 全部字体大小 -->
+    <dimen name="text_size_buge">28sp</dimen>
+    <!-- 超大 -->
+    <dimen name="text_size_biggest">20sp</dimen>
+    <!-- 大 -->
+    <dimen name="text_size_bigger">18sp</dimen>
+    <!-- 中大 -->
+    <dimen name="text_size_big">15sp</dimen>
+    <!-- 中 -->
+    <dimen name="text_size_middle">12sp</dimen>
+    <!-- 小 -->
+    <dimen name="text_size_small">9sp</dimen>
+    <!-- 极小 -->
+    <dimen name="text_size_tiny">7sp</dimen>
+
+    <!-- 全部间距 -->
+    <!-- 主体界面边框间距 -->
+    <dimen name="main_border">5dp</dimen>
+    <!-- 文字图标等统一间距 -->
+    <dimen name="item_border">8dp</dimen>
+    <!-- 页眉页脚高度 -->
+    <dimen name="header_height">40dp</dimen>
+    <dimen name="footer_height">56dp</dimen>
+    <dimen name="banner_height">30dp</dimen>
+    <!-- 播放轨迹按钮位置 -->
+    <dimen name="playtrack_margin">76dp</dimen>
+    <dimen name="loc_margin">28dp</dimen>
+    <dimen name="community_margin">10dp</dimen>
+    <dimen name="community_header_height">160dp</dimen>
+    <dimen name="community_item_height">130dp</dimen>
+    <dimen name="capture_anim_height">178dp</dimen>
+    <dimen name="gender_width">15dp</dimen>
+    <dimen name="button_width">80dp</dimen>
+  <dimen name="item_image_height">80dp</dimen>
+     <dimen name="sidebar_margintop">100dp</dimen>
+</resources>

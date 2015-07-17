@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+            android:id="@+id/include1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            layout="@layout/act_title_qr" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/Text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/Two_Phone_Conecting"
+            android:textColor="@color/bb_cyan"
+            android:textSize="@dimen/text_size_big" />
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/login_account_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/lgoin_account"
+                android:layout_alignLeft="@+id/lgoin_account"
+                android:layout_alignTop="@+id/lgoin_account"
+                android:padding="5dip"
+                android:src="@drawable/act_wifi_apple" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignLeft="@+id/lgoin_account"
+                android:layout_alignRight="@+id/lgoin_account"
+                android:layout_below="@+id/lgoin_account"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/act_wifi_whitebtn"
+                android:hint="@string/Supper_BadPerson"
+                android:maxLength="16"
+                android:paddingLeft="85.0sp"
+                android:password="true"
+                android:saveEnabled="true" 
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"/>
+
+            <ImageView
+                android:id="@+id/login_password_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/login_password"
+                android:layout_alignLeft="@+id/login_password"
+                android:layout_alignTop="@+id/login_password"
+                android:padding="5dip"
+                android:src="@drawable/act_wifi_iclucher" />
+
+            <EditText
+                android:id="@+id/lgoin_account"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/act_wifi_whitebtn"
+                android:ems="10"
+                android:hint="@string/Supper_GoodPerson"
+                android:inputType="text"
+                android:maxLength="16"
+                android:paddingLeft="85.0sp"
+                android:saveEnabled="true" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/login_account_image"
+                android:layout_alignRight="@+id/login_account_image"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/act_wifi_apple" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

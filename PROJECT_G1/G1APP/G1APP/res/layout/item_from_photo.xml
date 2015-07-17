@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/act_name_edit_bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_person_image"
+        style="@style/set_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/cust_btnbg_all"
+        android:gravity="center"
+        android:text="@string/photo"
+        android:textSize="@dimen/text_size_bigger" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/darktextcolor" />
+
+    <Button
+        android:id="@+id/btn_person_album"
+        style="@style/set_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/cust_btnbg_all"
+        android:gravity="center"
+        android:text="@string/pickfrommobile"
+        android:textSize="@dimen/text_size_bigger" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/darktextcolor" />
+
+    <Button
+        android:id="@+id/btn_person_cancle"
+        style="@style/set_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/cust_btnbg_all"
+        android:gravity="center"
+        android:text="@string/cancle"
+        android:textSize="@dimen/text_size_bigger" />
+
+</LinearLayout>

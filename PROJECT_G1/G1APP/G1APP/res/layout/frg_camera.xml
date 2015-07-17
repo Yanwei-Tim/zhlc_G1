@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_real"
+        style="@style/mw"
+        android:layout_height="30dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_dark"
+        android:visibility="gone" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/mw"
+            android:layout_height="wrap_content"
+            android:background="@color/bb_gray0" >
+
+            <ImageButton
+                android:id="@+id/ibtn_real_set"
+                style="@style/ibtn"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/item_border"
+                android:src="@drawable/set" />
+
+            <TextView
+                android:id="@+id/tv_real_filename"
+                style="@style/bb_text"
+                android:layout_centerInParent="true"
+                android:text="File A"
+                android:textColor="@color/bb_gray2"
+                android:textSize="@dimen/text_size_bigger" />
+
+            <ImageButton
+                android:id="@+id/ibtn_real_share"
+                style="@style/ibtn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/item_border"
+                android:visibility="gone"
+                android:src="@drawable/share" />
+
+            <ImageView
+                android:id="@+id/ibtn_real_bluesplit"
+                style="@style/ww"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/item_border"
+                android:layout_toLeftOf="@+id/ibtn_real_share"
+                android:visibility="gone"
+                android:src="@drawable/split_blue" />
+
+            <ImageButton
+                android:id="@+id/ibtn_real_picture"
+                style="@style/ibtn"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/item_border"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/picture" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <SurfaceView
+                android:id="@+id/sfv_real"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/main_border"
+                android:background="@drawable/bg_surfaceview" />
+
+            <com.baidu.cyberplayer.core.BVideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/main_border"
+                android:background="@drawable/bg_surfaceview"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlyt_real_surfacebottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/main_border" >
+
+                <ImageButton
+                    android:id="@+id/ibtn_real_pause"
+                    style="@style/ibtn"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/item_border"
+                    android:src="@drawable/play_next"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_real_playnext"
+                    style="@style/ibtn"
+                    android:layout_alignTop="@+id/ibtn_real_pause"
+                    android:layout_margin="@dimen/item_border"
+                    android:layout_toRightOf="@+id/ibtn_real_pause"
+                    android:src="@drawable/play_next"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_real_fullscreen"
+                    style="@style/ibtn"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/item_border"
+                    android:src="@drawable/fullscreen"
+                    android:visibility="gone" />
+
+                <SeekBar
+                    android:id="@+id/sb_real"
+                    style="@style/seekbar"
+                    android:layout_above="@+id/ibtn_real_pause"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/ibtn_real_startplay"
+                style="@style/ibtn"
+                android:layout_width="@dimen/real_play_width"
+                android:layout_height="@dimen/real_play_height"
+                android:layout_centerInParent="true"
+                android:src="@drawable/play" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darktextcolor" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/main_border" >
+
+            <LinearLayout
+                android:id="@+id/ll_real_video"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_real_video"
+                    style="@style/bb_text"
+                    android:layout_width="100dp"
+                    android:gravity="center"
+                    android:text="@string/video"
+                    android:textColor="@color/bb_black"
+                    android:textSize="@dimen/text_size_bigger" />
+
+                <ImageView
+                    android:id="@+id/iv_real_video"
+                    style="@style/ww"
+                    android:layout_width="100dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/line_blue" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_real_splitdark"
+                style="@style/ww"
+                android:visibility="gone"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/ll_real_video"
+                android:background="@drawable/split_dark" />
+
+            <LinearLayout
+                android:id="@+id/ll_real_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_real_splitdark"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_real_image"
+                    style="@style/bb_text"
+                    android:layout_width="100dp"
+                    android:text="@string/image"
+                    android:textColor="@color/bb_black"
+                    android:textSize="@dimen/text_size_bigger" />
+
+                <ImageView
+                    android:id="@+id/iv_real_image"
+                    style="@style/ww"
+                    android:layout_width="100dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/line_dark" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/ibtn_real_delete"
+                style="@style/ibtn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/main_border"
+                android:src="@drawable/delete" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_real"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/main_border"
+        android:layout_weight="1"
+        android:background="@drawable/bg_dark"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+</LinearLayout>

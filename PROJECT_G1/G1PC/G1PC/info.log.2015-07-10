@@ -1,0 +1,9 @@
+2015-07-10 16:54:20[io.netty.util.internal.PlatformDependent] [main:0] - [INFO]  Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+2015-07-10 16:54:20[server_car_7776] [main:37] - [INFO]  TCP  start : port:7777
+2015-07-10 16:54:20[server_car_7776] [main:73] - [INFO]  TCP start ok
+2015-07-10 17:41:00[server_car_7776] [nioEventLoopGroup-3-1:2800811] - [INFO]  New connection 
+2015-07-10 17:41:00[server_car_7776] [nioEventLoopGroup-3-2:2800824] - [INFO]  New connection 
+2015-07-10 17:41:00[com.mchange.v2.log.MLog] [nioEventLoopGroup-3-1:2800837] - [INFO]  MLog clients using log4j logging.
+2015-07-10 17:41:00[com.mchange.v2.c3p0.C3P0Registry] [nioEventLoopGroup-3-1:2800881] - [INFO]  Initializing c3p0-0.9.2.1 [built 20-March-2013 11:16:28 +0000; debug? true; trace: 10]
+2015-07-10 17:43:00[TcpServerHandlerCar] [nioEventLoopGroup-3-1:2920820] - [ERROR]  server err  close imei:null   key:null
+2015-07-10 17:43:00[TcpServerHandlerCar] [nioEventLoopGroup-3-2:2920827] - [ERROR]  server err  close imei:null   key:null

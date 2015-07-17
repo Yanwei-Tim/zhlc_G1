@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/frgact_main_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            style="@style/set_text"
+            android:layout_marginLeft="@dimen/marginleft"
+            android:layout_marginRight="@dimen/marginleft"
+            android:layout_marginTop="@dimen/marginTitle"
+            android:background="@drawable/act_name_edit_bg"
+            android:padding="@dimen/marginleft"
+            android:text="@string/fun" />
+    </ScrollView>
+
+</LinearLayout>

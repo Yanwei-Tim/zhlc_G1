@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_carmodel"
+        layout="@layout/frgact_main_title" />
+
+    <TextView
+        android:id="@+id/tv_carmodel_save"
+        style="@style/set_text"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="@string/save"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/text_size_big" />
+
+    <RelativeLayout
+        style="@style/mm"
+        android:layout_below="@+id/title_carmodel" >
+
+        <com.zhlt.g1app.view.BounceListView
+            android:id="@+id/lv_carmodel"
+            style="@style/mm"
+            android:divider="@null"
+            android:scrollbars="@null"
+            android:paddingLeft="@dimen/marginleft"
+            android:paddingRight="@dimen/marginleft" >
+        </com.zhlt.g1app.view.BounceListView>
+
+        <com.zhlt.g1app.view.SideBar
+            android:id="@+id/sidebar_carmodel"
+            style="@style/wm"
+            android:layout_width="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/sidebar_margintop"
+            android:layout_marginRight="@dimen/sidebar_marginright"
+            android:layout_marginTop="@dimen/sidebar_margintop" />
+    </RelativeLayout>
+
+</RelativeLayout>

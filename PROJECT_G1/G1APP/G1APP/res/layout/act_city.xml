@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_city"
+        layout="@layout/frgact_main_title" />
+    
+    <ListView
+        android:id="@+id/lv_city"
+        style="@style/mm"
+        android:layout_marginLeft="@dimen/marginleft"
+        android:layout_marginRight="@dimen/marginleft"
+        android:layout_marginTop="@dimen/marginTitle"
+        android:background="@drawable/act_name_edit_bg"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:scrollbars="@null" >
+    </ListView>
+
+</LinearLayout>

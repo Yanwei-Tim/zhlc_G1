@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/person_top"
+        layout="@layout/frgact_main_title" />
+
+    <LinearLayout
+        style="@style/llyt_subset"
+        android:layout_below="@+id/person_top" >
+
+        <RelativeLayout
+            android:id="@+id/rlyt_person_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/person_item_height"
+            android:background="@drawable/cust_btnbg_all" >
+
+            <TextView
+                android:id="@+id/tv_person_head"
+                style="@style/set_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/head" />
+
+            <ImageView
+                android:id="@+id/iv_person_head"
+                style="@style/ww"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/ibtn_person_head_go"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_head" />
+
+            <ImageButton
+                android:id="@+id/ibtn_person_head_go"
+                style="@style/ibtn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/listitem_go_marginright"
+                android:src="@drawable/act_set_go" />
+
+            <ImageView
+                style="@style/bg_line"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_person_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/person_item_height"
+            android:background="@drawable/cust_btnbg_all"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_person_name"
+                style="@style/set_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/name" />
+
+            <ImageButton
+                android:id="@+id/ibtn_person_name_go"
+                style="@style/ibtn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/listitem_go_marginright"
+                android:src="@drawable/act_set_go" />
+
+            <TextView
+                android:id="@+id/tv_person_name_value"
+                style="@style/set_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/ibtn_person_name_go"
+                android:layout_toRightOf="@+id/tv_person_name"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="asdf"
+                android:textColor="@color/bb_gray2"
+                android:textSize="@dimen/text_size_middle" />
+
+            <ImageView
+                 style="@style/bg_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_person_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/person_item_height"
+            android:background="@drawable/cust_btnbg_all"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_person_sex"
+                style="@style/set_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/gender" />
+
+            <ImageButton
+                android:id="@+id/ibtn_person_sex_go"
+                style="@style/ibtn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/listitem_go_marginright"
+                android:src="@drawable/act_set_go" />
+
+            <TextView
+                android:id="@+id/tv_person_sex_value"
+                style="@style/set_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/ibtn_person_sex_go"
+                android:layout_toRightOf="@+id/tv_person_sex"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="asdf"
+                android:textColor="@color/bb_gray2"
+                android:textSize="@dimen/text_size_middle" />
+
+            <ImageView
+                 style="@style/bg_line"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_person_position"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/person_item_height"
+            android:background="@drawable/cust_btnbg_all"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_person_position"
+                style="@style/set_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/position" />
+
+            <ImageButton
+                android:id="@+id/ibtn_person_position_go"
+                style="@style/ibtn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/listitem_go_marginright"
+                android:src="@drawable/act_set_go" />
+
+            <TextView
+                android:id="@+id/tv_person_position_value"
+                style="@style/set_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/ibtn_person_position_go"
+                android:layout_toRightOf="@+id/tv_person_position"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="asdf"
+                android:textColor="@color/bb_gray2"
+                android:textSize="@dimen/text_size_middle" />
+
+            <ImageView
+                 style="@style/bg_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_person_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/person_item_height"
+            android:background="@drawable/cust_btnbg_all"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_person_phone"
+                style="@style/set_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/phone" />
+
+            <ImageButton
+                android:id="@+id/ibtn_person_phone_go"
+                style="@style/ibtn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/listitem_go_marginright"
+                android:src="@drawable/act_set_go" />
+
+            <TextView
+                android:id="@+id/tv_person_phone_value"
+                style="@style/set_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/ibtn_person_phone_go"
+                android:layout_toRightOf="@+id/tv_person_phone"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="asdf"
+                android:textColor="@color/bb_gray2"
+                android:textSize="@dimen/text_size_middle" />
+
+            <ImageView
+                  style="@style/bg_line"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_person_sign"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/person_item_height"
+            android:background="@drawable/cust_btnbg_all"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_person_sign"
+                style="@style/set_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/sign" />
+
+            <ImageButton
+                android:id="@+id/ibtn_person_sign_go"
+                style="@style/ibtn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/listitem_go_marginright"
+                android:src="@drawable/act_set_go" />
+
+            <TextView
+                android:id="@+id/tv_person_sign_value"
+                style="@style/set_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/ibtn_person_sign_go"
+                android:layout_toRightOf="@+id/tv_person_sign"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="asdf"
+                android:textColor="@color/bb_gray2"
+                android:textSize="@dimen/text_size_middle" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_person_dialog_outside"
+        style="@style/mm"
+        android:background="@drawable/dialog_outside_bg"
+        android:visibility="gone" />
+    <include
+        android:id="@+id/person_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/item_from_photo"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/frgact_main_title" />
+
+    <LinearLayout style="@style/llyt_subset" >
+
+        <LinearLayout
+            android:id="@+id/rlyt_gender_man"
+            style="@style/subset_item"
+            android:layout_marginTop="0dp"
+            android:background="@null" >
+
+            <TextView
+                android:id="@+id/tv_gender_man"
+                style="@style/set_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/man" />
+
+            <ImageButton
+                android:id="@+id/ibtn_gender_man_select"
+                style="@style/ibtn_gender" />
+        </LinearLayout>
+
+        <ImageView style="@style/list_line" />
+
+        <LinearLayout
+            android:id="@+id/rlyt_gender_woman"
+            style="@style/subset_item"
+            android:layout_marginTop="0dp"
+            android:background="@null" >
+
+            <TextView
+                android:id="@+id/tv_gender_woman"
+                style="@style/set_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/woman" />
+
+            <ImageButton
+                android:id="@+id/ibtn_gender_woman_select"
+                style="@style/ibtn_gender" />
+        </LinearLayout>
+
+        <ImageView style="@style/list_line" />
+
+        <LinearLayout
+            android:id="@+id/rlyt_gender_serect"
+            style="@style/subset_item"
+            android:layout_marginTop="0dp"
+            android:background="@null" >
+
+            <TextView
+                android:id="@+id/tv_gender_secret"
+                style="@style/set_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/secret" />
+
+            <ImageButton
+                android:id="@+id/ibtn_gender_secret_select"
+                style="@style/ibtn_gender" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

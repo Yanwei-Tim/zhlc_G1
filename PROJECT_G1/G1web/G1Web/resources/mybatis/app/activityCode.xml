@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zhlc.app.dao.IActivityCodeDao">
+
+	<!-- 记录仪与用户绑定 -->
+	<insert id="insert" parameterType="Map">
+		<![CDATA[
+			INSERT INTO g1_user_bind(
+				u_id,
+				g1_imei,
+				activation_code,
+				g1_key,
+				active_time
+			)VALUES(
+				#{u_id},
+				#{g1_imei},
+				#{activation_code},
+				#{g1_key},
+				now()
+			)
+		]]>
+	</insert>
+	
+	<!-- 查询imei号 -->
+	<select id="queryByMap" resultType="java.util.HashMap" parameterType="Map">
+		<![CDATA[
+			select Imei from Imei_bind_activationCode where type='1' and activation_code = #{activation_code}
+		]]>
+	</select>
+
+</mapper>

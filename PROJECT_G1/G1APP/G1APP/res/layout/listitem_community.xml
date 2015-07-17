@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/r_rl_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/community_margin"
+        android:layout_marginRight="@dimen/community_margin"
+        android:minHeight="40dp"
+        android:padding="@dimen/item_border" >
+
+        <ImageView
+            android:id="@+id/ibtn_xlistitem_pic"
+            android:layout_width="@dimen/head_width"
+            android:layout_height="@dimen/head_width"
+            android:background="@drawable/ic_launcher"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_xlistview_name"
+            style="@style/ww"
+            android:layout_alignTop="@+id/ibtn_xlistitem_pic"
+            android:layout_toRightOf="@+id/ibtn_xlistitem_pic"
+            android:text="超级大好人"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/bb_green"
+            android:textSize="@dimen/text_size_middle" />
+
+        <TextView
+            android:id="@+id/tv_xlistview_loc"
+            style="@style/ww"
+            android:layout_alignBottom="@+id/ibtn_xlistitem_pic"
+            android:layout_toRightOf="@+id/ibtn_xlistitem_pic"
+            android:drawableLeft="@drawable/loc_mini"
+                  android:layout_marginLeft="5dp"
+            android:text="广东省深圳市福田区福田口岸"
+            android:textColor="@color/bb_gray3"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_xlistview_date"
+            style="@style/ww"
+            android:layout_alignBottom="@+id/ibtn_xlistitem_pic"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/head_width"
+            android:text="今天"
+            android:textColor="@color/bb_gray3"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_xlistview_text"
+            style="@style/ww"
+            android:layout_alignLeft="@+id/tv_xlistview_loc"
+            android:layout_below="@+id/tv_xlistview_loc"
+            android:layout_marginTop="5dp"
+            android:text="今天又遇到碰瓷的了，请大家注意这个人！！/愤怒"
+            android:textColor="@color/bb_black"
+            android:textSize="@dimen/text_size_middle" />
+
+        <LinearLayout
+            android:id="@+id/llyt_xlistview_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_xlistview_loc"
+            android:layout_below="@+id/tv_xlistview_text"
+            android:gravity="left"
+            android:layout_marginRight="@dimen/head_width"
+            android:layout_marginTop="@dimen/item_border"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ibtn_xlistview_good"
+            style="@style/ibtn"
+            android:layout_alignBottom="@+id/ibtn_xlistview_comment"
+            android:layout_marginRight="@dimen/community_item_button_marginright"
+            android:layout_toLeftOf="@+id/ibtn_xlistview_comment"
+            android:padding="5dp"
+            android:src="@drawable/selector_good" />
+
+        <ImageButton
+            android:id="@+id/ibtn_xlistview_goodflow"
+            style="@style/ibtn"
+            android:layout_alignBottom="@+id/ibtn_xlistview_comment"
+            android:layout_marginRight="@dimen/community_item_button_marginright"
+            android:layout_toLeftOf="@+id/ibtn_xlistview_comment"
+            android:padding="5dp"
+            android:src="@drawable/good_pressed"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_xlistview_good_value"
+            style="@style/ww"
+            android:layout_alignBottom="@+id/ibtn_xlistview_good"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/community_item_text_marginleft"
+            android:layout_toRightOf="@+id/ibtn_xlistview_good"
+            android:gravity="bottom"
+            android:text="20"
+            android:textColor="@color/bb_gray1" />
+
+        <ImageButton
+            android:id="@+id/ibtn_xlistview_comment"
+            style="@style/ibtn"
+            android:layout_below="@+id/llyt_xlistview_content"
+            android:layout_marginRight="-3dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/tv_xlistview_comment_value"
+            android:padding="5dp"
+            android:src="@drawable/selector_comment" />
+
+        <TextView
+            android:id="@+id/tv_xlistview_comment_value"
+            style="@style/ww"
+            android:layout_alignBottom="@+id/ibtn_xlistview_comment"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="10"
+            android:textColor="@color/bb_gray1" />
+
+        <CheckBox
+            android:id="@+id/ibtn_xlistview_collect"
+            style="@style/ibtn"
+            android:layout_alignBottom="@+id/ibtn_xlistview_comment"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/ibtn_xlistview_good"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_collect"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:id="@+id/llyt_xlistview_comment"
+            style="@style/mw"
+            android:layout_alignLeft="@+id/tv_xlistview_text"
+            android:layout_below="@+id/ibtn_xlistview_comment"
+            android:background="@drawable/bg_comment"
+            android:minHeight="20dp"
+            android:orientation="vertical"
+            android:padding="5dp" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

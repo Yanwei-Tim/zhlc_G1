@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        style="@style/ww"
+        android:layout_marginTop="5dp"
+        android:text="@string/Tv_G1_Product" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        style="@style/ww"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/act_wifi_whitebtn"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/SMI_4G"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/Tv_Hint_SM" />
+
+        <TextView
+            android:id="@+id/SMI_4G1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/Tv_Hint_MIS4G1" />
+    </LinearLayout>
+
+ 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearlayout"
+        android:layout_marginTop="3dp"
+        android:text="@string/Tv_Flow_Manger" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        style="@style/ww"
+        android:layout_above="@+id/imageButton1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/act_name_edit_bg"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Tv_Month_Flow"
+            android:textColor="#ea5514"
+            android:textSize="@dimen/text_size_middle" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/Tv_Once_Flow"
+            android:textColor="#ea5514"
+            android:textSize="@dimen/text_size_middle" />
+
+        <TextView
+            android:id="@+id/tv_flow_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:text="@string/Tv_Sum_Flow"
+            android:textColor="#898989"
+            android:textSize="@dimen/text_size_middle" />
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/flow_index_update" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/imageButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tv_flow_tip"
+        android:layout_below="@+id/image_Table"
+        android:background="@drawable/act_pay_btn_nomar"
+        android:text="@string/Atonce_play"
+        android:textColor="@color/bb_white"
+        android:textSize="@dimen/text_size_bigger" />
+
+    <TextView
+        android:id="@+id/tv_flow_tip"
+        style="@style/set_text"
+        android:layout_alignParentBottom="true"
+        android:text="@string/Tv_Show_Context"
+        android:textColor="@color/bb_gray3"
+        android:textSize="@dimen/text_size_middle" />
+
+</RelativeLayout>

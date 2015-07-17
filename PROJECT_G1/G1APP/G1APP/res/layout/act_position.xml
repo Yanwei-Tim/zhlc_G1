@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title_position"
+            layout="@layout/frgact_main_title" />
+
+        <LinearLayout
+            android:id="@+id/llyt_position"
+            style="@style/mm"
+            android:layout_marginLeft="@dimen/marginleft"
+            android:layout_marginRight="@dimen/marginleft"
+            android:layout_marginTop="@dimen/marginTitle"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/rlyt_position_location"
+                style="@style/subset_item" >
+
+                <ProgressBar
+                    android:id="@+id/pb_position_location"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/iv_position_location"
+                    style="@style/ww"
+                    android:layout_marginLeft="@dimen/marginleft"
+                    android:padding="6dp"
+                    android:src="@drawable/act_position_location"
+                   />
+
+                <TextView
+                    android:id="@+id/tv_position_here"
+                    style="@style/set_text"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="广东深圳" />
+
+                <ImageView
+                    style="@style/ww"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/listitem_go_marginright"
+                    android:src="@drawable/act_set_go" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/set_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:text="全部 " />
+
+            <ListView
+                android:id="@+id/xListView_position"
+                style="@style/mm"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/act_name_edit_bg"
+                android:divider="@null"
+                android:overScrollMode="never"
+                android:scrollbars="@null" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

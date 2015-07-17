@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark" >
+
+    <include
+        android:id="@+id/title_password"
+        layout="@layout/frgact_main_title" />
+
+    <RelativeLayout
+        style="@style/mw"
+        android:layout_marginLeft="@dimen/login_marginright"
+        android:layout_marginRight="@dimen/login_marginright"
+        android:layout_marginTop="@dimen/login_marginright" >
+
+        <TextView
+            android:id="@+id/tv_register_pass"
+            style="@style/set_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/pass"
+            android:textColor="@color/bb_gray2"
+            android:textSize="@dimen/text_size_big" />
+
+        <RelativeLayout
+            android:id="@+id/llyt_edit_register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_below="@+id/tv_register_pass"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/act_login_verifi"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/login_head" />
+
+            <EditText
+                android:id="@+id/edit_register_phone"
+                style="@style/mm"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/hint_phone"
+                android:inputType="number"
+                android:textCursorDrawable="@drawable/password_cursor"
+                android:textSize="@dimen/text_size_middle" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llyt_register_verif"
+            style="@style/mw"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_below="@+id/llyt_edit_register_phone"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edit_register_verif"
+                style="@style/style_0m"
+                android:background="@drawable/act_login_verifi"
+                android:gravity="center"
+                android:hint="@string/hint_getverif"
+                android:inputType="number"
+                android:textCursorDrawable="@drawable/password_cursor"
+                android:textSize="@dimen/text_size_middle" />
+
+            <Button
+                android:id="@+id/btn_register_getverif"
+                style="@style/style_0m"
+                android:background="@drawable/selector_sendverif"
+                android:gravity="center"
+                android:text="@string/getverif"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_middle" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register_sure"
+            style="@style/set_text"
+            android:layout_width="@dimen/login_botton_width"
+            android:layout_height="@dimen/login_sure_height"
+            android:layout_below="@+id/llyt_register_verif"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/selector_login"
+            android:gravity="center"
+            android:text="@string/sure"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_biggest" />
+    </RelativeLayout>
+
+</FrameLayout>

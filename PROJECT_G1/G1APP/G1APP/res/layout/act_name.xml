@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark" >
+
+    <include layout="@layout/frgact_main_title" />
+
+    <TextView
+        android:id="@+id/tv_name_cancle"
+        style="@style/set_text"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/bb_gray2"
+        android:text="@string/cancle"
+        android:textSize="@dimen/text_size_big" />
+
+    <TextView
+        android:id="@+id/tv_name_save"
+        style="@style/set_text"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="@string/save"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/text_size_big" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        style="@style/mw"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_name_save"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/act_name_edit_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:textColor="@color/bb_black"
+        android:textCursorDrawable="@drawable/password_cursor"
+        android:textSize="@dimen/text_size_big" />
+
+    <ImageButton
+        android:id="@+id/ibtn_name_clear"
+        style="@style/ibtn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/edit_name"
+        android:layout_alignTop="@+id/edit_name"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/act_name_edit_clear" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+/* 用户表 */
+CREATE TABLE `t_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '主键',
+  `user_name` varchar(50) NOT NULL DEFAULT '0' COMMENT '注册账号',
+  `user_pass` varchar(50) NOT NULL DEFAULT '0' COMMENT '登陆密码',
+  `nick_name` varchar(50) COMMENT '昵称',
+  `car_type` varchar(20) NOT NULL DEFAULT '1' COMMENT '注册类型：1-手机注册，2-qq注册，3-微博注册，4-微信注册',
+  `type` char(2) NOT NULL DEFAULT '1' COMMENT '注册类型：1-手机注册，2-qq注册，3-微博注册，4-微信注册',
+  `active_code` varchar(50) COMMENT '用户激活码',
+  `state` char(2) NOT NULL DEFAULT '1' COMMENT '用户状态：1-正常，2-锁定',
+  `create_time` datetime NOT NULL COMMENT '注册时间'
+)COMMENT='用户注册';
+
+/* 用户详情表 */
+CREATE TABLE `t_user_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '主键',
+  `logo` varchar(50) COMMENT '用户图像(50x50)',
+  `user_name` varchar(50) COMMENT '用户名称',
+  `sex` char(2) COMMENT '性别：1-男，2-女',
+  `prov` varchar(20) COMMENT '省',
+  `city` varchar(20) COMMENT '市',
+  `signature` varchar(50) COMMENT '个性签名',
+  `modify_time` datetime NOT NULL COMMENT '修改时间',
+  `u_id` int(11) NOT NULL COMMENT '用户'
+)COMMENT='用户详情';
+
+/* 用户登录日志 */
+CREATE TABLE `t_user_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '主键',
+  `user_name` varchar(50) COMMENT '用户名称',
+  `login_time` datetime NOT NULL COMMENT '登录时间',
+  `state` char(2) NOT NULL COMMENT '是否登录成功：1-成功，0-失败'
+)COMMENT='用户登录日志';
+
+/* 短信验证码 */
+CREATE TABLE `t_checkcode` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '主键',
+  `mobile` varchar(20) COMMENT '手机号码',
+  `checkcode` varchar(6) COMMENT '验证码',
+  `ip` varchar(20) COMMENT 'IP',
+  `createtime` datetime COMMENT '创建时间',
+  `expiretime` datetime COMMENT '过期时间',
+  `state` char(2) DEFAULT '1' COMMENT '状态：1-有效，0-无效'
+)COMMENT='短信验证码';
+
+/* 用户imei号绑定 */
+CREATE TABLE `t_user_bind` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `u_id` int(11) NOT NULL COMMENT '用户电话',
+  `g1_imei` varchar(50) NOT NULL COMMENT 'Imei号',
+  `activation_code` varchar(50) NOT NULL COMMENT '激活码',
+  `g1_key` varchar(50) NOT NULL COMMENT '下发的key',
+  `active_time` datetime NOT NULL COMMENT '激活时间',
+  PRIMARY KEY (`id`),
+  KEY `uid` (`id`)
+) COMMENT='用户imei号绑定';

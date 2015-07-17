@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llyt_menu_listitem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_menu_listitem"
+            style="@style/ww"
+            android:layout_marginLeft="@dimen/menu_head_marginleft"
+            android:layout_width="80dp"
+            android:src="@drawable/menu_aboutus" />
+
+        <TextView
+            android:id="@+id/tv_menu_listitem"
+            style="@style/set_text"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="我们"
+            android:textSize="@dimen/bigtextsize" />
+    </LinearLayout>
+
+</LinearLayout>

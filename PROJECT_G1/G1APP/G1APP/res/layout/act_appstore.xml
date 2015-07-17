@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_appstore"
+        layout="@layout/frgact_main_title" />
+
+    <LinearLayout
+        style="@style/llyt_subset"
+        android:layout_above="@+id/btn_appstore_lookspace"
+        android:layout_below="@+id/title_appstore"
+        android:background="@null" >
+
+        <RelativeLayout
+            style="@style/mw"
+            android:background="@drawable/act_name_edit_bg"
+           >
+
+            <TextView
+                android:id="@+id/tv_appstore_ava"
+                style="@style/set_text"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="@dimen/item_marginleft"
+                android:text="@string/reserved_space_available"
+                android:textSize="@dimen/text_size_big" />
+
+            <Button
+                android:id="@+id/btn_appstore_ava"
+                style="@style/set_text"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/tv_appstore_ava"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/tv_appstore_ava"
+                android:background="@drawable/act_appstore_bluebg"
+                android:drawableRight="@drawable/act_appstore_rectangle"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingRight="10dp"
+                android:text="500"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_big" />
+
+            <TextView
+                android:id="@+id/tv_appstore_space"
+                style="@style/set_text"
+                android:layout_alignBottom="@+id/btn_appstore_ava"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_appstore_ava"
+                android:text="@string/mb"
+                android:textSize="@dimen/text_size_big" />
+
+            <TextView
+                android:id="@+id/tv_appstore_spacehint"
+                style="@style/set_text"
+                android:layout_below="@+id/tv_appstore_ava"
+                android:layout_marginLeft="@dimen/item_marginleft"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/reserved_space_available_hint"
+                android:textColor="@color/bb_gray3"
+                android:textSize="@dimen/text_size_middle" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llyt_appstore_total"
+            style="@style/mw"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/act_name_edit_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+             >
+
+            <TextView
+                style="@style/set_text"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/item_marginleft"
+                android:layout_weight="1"
+                android:text="@string/total_space"
+                android:textSize="@dimen/text_size_big" />
+
+            <TextView
+                android:id="@+id/tv_appstore_totalspace"
+                style="@style/set_text"
+                android:text="15GB"
+                 android:layout_marginRight="@dimen/item_marginleft"
+                android:textSize="@dimen/text_size_big" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llyt_appstore_precent"
+            style="@style/mm"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/act_name_edit_bg"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <LinearLayout
+                style="@style/mm"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    style="@style/ww"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/iv_appstore_circlebig"
+                        style="@style/ww"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/act_appstore_cicle" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/ww"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:drawableLeft="@drawable/act_appstore_rectangle1"
+                        android:drawablePadding="5dp"
+                        android:text="@string/available"
+                        android:textColor="#6ac4d3"
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_marginLeft="@dimen/appstore_space"
+                        android:text="10GB"
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/act_appstore_rectangle2"
+                        android:drawablePadding="5dp"
+                        android:text="G1"
+                        android:textColor="#23898e"
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_marginLeft="@dimen/appstore_space"
+                        android:text="320MB"
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/act_appstore_rectangle3"
+                        android:drawablePadding="5dp"
+                        android:text="@string/other"
+                        android:textColor="@color/bb_gray1"
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_marginLeft="@dimen/appstore_space"
+                        android:text="9GB"
+                        android:textSize="@dimen/text_size_middle" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_appstore_precent_info"
+                style="@style/set_text"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="@string/g1info"
+                android:layout_marginLeft="@dimen/item_marginleft"
+                android:textColor="@color/bb_gray3"
+                android:textSize="@dimen/text_size_middle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_appstore_lookspace"
+        style="@style/mw"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/set_marginleft"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_login"
+        android:gravity="center"
+        android:text="@string/look_space"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_big" />
+
+    <include
+        android:id="@+id/item_space"
+        layout="@layout/item_space"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/item_photo"
+        android:visibility="gone" />
+
+</RelativeLayout>

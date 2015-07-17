@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/frgact_main_title" />
+
+    <LinearLayout style="@style/llyt_subset" >
+
+        <LinearLayout
+            android:id="@+id/rlyt_language_simplified"
+            style="@style/subset_item"
+            android:layout_marginTop="0dp"
+            android:background="@null" >
+
+            <TextView
+                android:id="@+id/tv_language_simplified"
+                style="@style/set_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/simplified" />
+
+            <ImageButton
+                android:id="@+id/ibtn_language_simplified_select"
+                style="@style/ibtn_gender"
+                android:src="@drawable/language_selected" />
+        </LinearLayout>
+
+        <ImageView style="@style/list_line" />
+
+        <LinearLayout
+            android:id="@+id/rlyt_language_traditional"
+            style="@style/subset_item"
+            android:layout_marginTop="0dp"
+            android:background="@null" >
+
+            <TextView
+                android:id="@+id/tv_language_traditional"
+                style="@style/set_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/traditional" />
+
+            <ImageButton
+                android:id="@+id/ibtn_language_traditional_select"
+                style="@style/ibtn_gender"
+                android:src="@drawable/language_selected" />
+        </LinearLayout>
+
+        <ImageView style="@style/list_line" />
+
+        <LinearLayout
+            android:id="@+id/rlyt_language_english"
+            style="@style/subset_item"
+            android:layout_marginTop="0dp"
+            android:background="@null" >
+
+            <TextView
+                android:id="@+id/tv_language_english"
+                style="@style/set_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/english" />
+
+            <ImageButton
+                android:id="@+id/ibtn_language_english_select"
+                style="@style/ibtn_gender"
+                android:src="@drawable/language_selected" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

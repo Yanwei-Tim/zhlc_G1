@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_item_height" >
+
+        <TextView
+            android:id="@+id/tv_person_listitem_name"
+            style="@style/dark_text"
+            android:layout_centerVertical="true"
+                android:text="asdf"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/ibtn_person_listitem_go"
+            style="@style/ibtn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/selector_frgact_main_title_left" />
+
+        <TextView
+            android:id="@+id/tv_person_listitem_value"
+            style="@style/dark_text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:text="asdf"
+            android:layout_toLeftOf="@+id/ibtn_person_listitem_go" />
+        
+         <ImageView
+            android:id="@+id/iv_person_listitem_pic"
+            style="@style/ww"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/menu_head" />
+    </RelativeLayout>
+
+</RelativeLayout>

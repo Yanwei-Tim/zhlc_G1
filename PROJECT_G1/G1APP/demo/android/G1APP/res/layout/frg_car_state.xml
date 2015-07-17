@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_car"
+        style="@style/mw"
+        android:layout_height="30dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_dark"
+        android:visibility="gone" >
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/r_tv_adv"
+        style="@style/mw"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:background="#ccc"
+        android:gravity="center"
+        android:text="广东首例MERS患者病情加重"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp" />
+    <RelativeLayout
+        style="@style/mm"
+        android:background="@drawable/bg_dark"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rounded"
+            android:orientation="vertical" >
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/r_bmap_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:layout_weight="5" >
+
+                <TextView
+                    android:id="@+id/r_tv_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#009999" />
+                
+                <TextView
+                    android:id="@+id/r_tv_loc_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:text="南海区粤海街道"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/r_tv_loc_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10dp"
+                    android:text="科兴科学园"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/r_tv_loc_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10dp"
+                    android:text="刚刚采用网络定位（精度100米）"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <Button 
+            android:id="@+id/r_btn_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+           	android:layout_marginBottom="40dp"
+            android:background="@drawable/selector_frgact_main_location"
+            android:text="定位"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:paddingTop="40dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/mm"
+        android:background="@drawable/bg_dark"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <FrameLayout
+            style="@style/ww"
+            android:layout_above="@+id/ibtn_car_navi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-30dp" >
+
+            <LinearLayout
+                android:id="@+id/llyt_car_navi"
+                style="@style/ww"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_car_source"
+                        style="@style/white_text"
+                        android:layout_width="@dimen/navi_input_width"
+                        android:background="@drawable/navi_input"
+                        android:gravity="center"
+                        android:text="@string/source"
+                        android:textSize="@dimen/smalltextsize" />
+
+                    <ImageView
+                        style="@style/ww"
+                        android:layout_gravity="right"
+                        android:src="@drawable/line_source" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_car_dest"
+                        style="@style/white_text"
+                        android:layout_width="@dimen/navi_input_width"
+                        android:background="@drawable/navi_input"
+                        android:gravity="center"
+                        android:text="@string/dest"
+                        android:textSize="@dimen/smalltextsize" />
+
+                    <ImageView
+                        style="@style/ww"
+                        android:src="@drawable/line_dest" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/ibtn_car_navi"
+            style="@style/ww"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:src="@drawable/navi" />
+    </RelativeLayout>
+
+</LinearLayout>

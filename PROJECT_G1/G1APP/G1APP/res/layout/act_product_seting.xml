@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llyt_common_voice"
+        style="@style/subset_item"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/act_name_edit_bg" >
+
+        <TextView
+            style="@style/set_text"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/item_marginleft"
+             android:layout_weight="1"
+            android:text="@string/zidong_xiazai_poaizao"
+            android:textColor="@color/bb_black"
+            android:textSize="@dimen/text_size_big" />
+
+        <SeekBar
+            android:id="@+id/sb_common_voice"
+            style="@style/seekbar_subset"
+            android:layout_width="68dp"
+            android:progressDrawable="@drawable/selector_common_progessdrawable"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llyt_Save_Manger"
+        style="@style/subset_item"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            style="@style/set_text"
+            android:layout_marginLeft="@dimen/item_marginleft"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:text="@string/Save_Manger" />
+
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/ww"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+             android:layout_weight="0.08"
+            android:background="@drawable/act_set_go" />
+    </LinearLayout>
+
+</LinearLayout>

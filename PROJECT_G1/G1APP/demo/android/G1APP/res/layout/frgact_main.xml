@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrgActMain" >
+
+    <include
+        android:id="@+id/r_icl_title"
+        layout="@layout/frgact_main_title" />
+    
+    
+    
+    <RadioGroup
+        android:id="@+id/r_rg_frg_act_main"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/r_rb_car_state"
+            style="@style/MyRadioButton"
+            android:drawableTop="@drawable/selector_frgact_main_car_state"
+            android:text="@string/car_state" />
+
+        <RadioButton
+            android:id="@+id/r_rb_camera"
+            style="@style/MyRadioButton"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/selector_frgact_main_camera"
+            android:text="@string/camera" />
+
+        <RadioButton
+            android:id="@+id/r_rb_community"
+            style="@style/MyRadioButton"
+            android:drawableTop="@drawable/selector_frgact_main_community"
+            android:text="@string/community" />
+        
+        <RadioButton
+            android:id="@+id/r_rb_settings"
+            style="@style/MyRadioButton"
+            android:drawableTop="@drawable/selector_frgact_main_settings"
+            android:text="@string/settings" />
+    </RadioGroup>
+<com.zhlt.g1app.view.ViewPagerScroll
+        android:id="@+id/r_vps_frg_act_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/r_icl_title"
+        android:layout_above="@+id/r_rg_frg_act_main" />
+
+
+</RelativeLayout>

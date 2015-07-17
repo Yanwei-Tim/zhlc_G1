@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_set"
+        layout="@layout/frgact_main_title" />
+
+    <ScrollView
+        style="@style/mm"
+        android:overScrollMode="never"
+        android:layout_marginTop="45dp" >
+
+        <LinearLayout
+            style="@style/mw"
+            android:layout_marginLeft="@dimen/set_marginleft"
+            android:layout_marginRight="@dimen/set_marginleft"
+            android:layout_marginTop="@dimen/set_margintop"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llyt_subset_camera"
+                style="@style/subset_item"
+                android:layout_marginTop="0dp" >
+
+                <TextView
+                    style="@style/set_text"
+                    android:layout_marginLeft="@dimen/item_marginleft"
+                    android:text="@string/camera_connect"
+                    android:textColor="@color/bb_black"
+                    android:textSize="@dimen/text_size_big" />
+
+                <TextView
+                    style="@style/set_text"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/camera_not_connect"
+                    android:textColor="@color/bb_gray3"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <ImageButton
+                    style="@style/ibtn"
+                    android:layout_marginRight="@dimen/item_marginleft"
+                    android:src="@drawable/act_set_go" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/mw"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/act_name_edit_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llyt_subset_appstore"
+                    style="@style/subset_item"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/cust_btnbg_all" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/item_marginleft"
+                        android:layout_weight="1"
+                        android:text="@string/appstore"
+                        android:textColor="@color/bb_black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <ImageButton
+                        style="@style/ibtn"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/act_set_go" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/item_marginleft"
+                    android:layout_marginRight="@dimen/item_marginleft"
+                    android:background="@drawable/line_dark" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_subset_language"
+                    style="@style/subset_item"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/cust_btnbg_all" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/language"
+                        android:textColor="@color/bb_black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <ImageButton
+                        style="@style/ibtn"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/act_set_go" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/item_marginleft"
+                    android:layout_marginRight="@dimen/item_marginleft"
+                    android:background="@drawable/line_dark" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_subset_offlinemap"
+                    style="@style/subset_item"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/cust_btnbg_all" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/offline_map"
+                        android:textColor="@color/bb_black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <ImageButton
+                        style="@style/ibtn"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/act_set_go" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                android:id="@+id/llyt_subset_auto"
+                style="@style/subset_item" >
+
+                <TextView
+                    style="@style/set_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/auto_download"
+                    android:textColor="@color/bb_black"
+                    android:textSize="@dimen/text_size_big" />
+
+                <SeekBar
+                    android:id="@+id/sb_subset"
+                    style="@style/seekbar_subset"
+                    android:layout_width="68dp" />
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:id="@+id/llyt_subset_wifi"
+                style="@style/subset_item" >
+
+                <TextView
+                    style="@style/set_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/wifi"
+                    android:textColor="@color/bb_black"
+                    android:textSize="@dimen/text_size_big" />
+
+                <ImageView
+                    style="@style/ww"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/listitem_go_marginright"
+                    android:src="@drawable/act_set_go" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llyt_subset_common"
+                style="@style/subset_item" >
+
+                <TextView
+                    style="@style/set_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/common"
+                    android:textColor="@color/bb_black"
+                    android:textSize="@dimen/text_size_big" />
+
+                <ImageView
+                    style="@style/ww"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/listitem_go_marginright"
+                    android:src="@drawable/act_set_go" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/mw"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/act_name_edit_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llyt_subset_password"
+                    style="@style/subset_item"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/cust_btnbg_all" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/changepassword"
+                        android:textColor="@color/bb_black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <ImageButton
+                        style="@style/ibtn"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/act_set_go" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/item_marginleft"
+                    android:layout_marginRight="@dimen/item_marginleft"
+                    android:background="@drawable/line_dark" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_subset_loginout"
+                    style="@style/subset_item"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/cust_btnbg_all" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/loginout"
+                        android:textColor="@color/bb_black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <ImageButton
+                        style="@style/ibtn"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/act_set_go" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_subset_dialog_outside"
+        style="@style/mm"
+        android:background="@drawable/dialog_outside_bg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_subset_dialog"
+        style="@style/set_text"
+        android:layout_width="@dimen/dialog_connectfirst_width"
+        android:layout_height="@dimen/dialog_connect_height"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center"
+        android:text="@string/connect_first"
+        android:textSize="@dimen/text_size_biggest"
+        android:visibility="gone" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_subset_loginout"
+        android:layout_width="@dimen/dialog_connect_width"
+        android:layout_height="@dimen/dialog_connect_height"
+        android:layout_gravity="center"
+        android:background="@drawable/act_subset_loginout_bg"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/set_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/sureloginout"
+            android:textSize="@dimen/text_size_biggest" />
+
+        <LinearLayout
+            style="@style/mw"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/loginout_marginbottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_subset_loginout_cancle"
+                style="@style/set_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cancle"
+                android:textColor="#29b76c"
+                android:textSize="@dimen/text_size_biggest" />
+
+            <TextView
+                android:id="@+id/tv_subset_loginout_sure"
+                style="@style/set_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:textColor="@color/bb_gray1"
+                android:textSize="@dimen/text_size_biggest" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

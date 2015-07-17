@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlyt_position_listitem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gender_item_height"
+        android:background="@drawable/cust_btnbg_all"
+       >
+
+        <TextView
+            android:id="@+id/tv_position_listitem_name"
+            style="@style/set_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="asdf" />
+
+        <ImageButton
+            android:id="@+id/ibtn_person_listitem_go"
+            style="@style/ibtn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/listitem_go_marginright"
+            android:src="@drawable/act_set_go" />
+
+        <TextView
+            android:id="@+id/tv_person_listitem_value"
+            style="@style/set_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/ibtn_person_listitem_go"
+            android:layout_toRightOf="@+id/tv_person_listitem_name"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="asdf"
+            android:visibility="gone"
+            android:textColor="@color/bb_gray2"
+            android:textSize="@dimen/text_size_middle" />
+
+        <ImageView
+            android:id="@+id/iv_position_listitem_line"
+            style="@style/list_line" />
+    </RelativeLayout>
+
+</RelativeLayout>

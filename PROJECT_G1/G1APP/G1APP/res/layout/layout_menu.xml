@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dip" >
+
+        <ImageButton
+            android:id="@+id/ibtn_menu_head"
+            style="@style/ibtn"
+            android:layout_width="@dimen/menu_head_width"
+            android:layout_height="@dimen/menu_head_height"
+            android:layout_marginLeft="@dimen/menu_head_marginleft"
+            android:src="@drawable/menu_head" />
+
+        <TextView
+            android:id="@+id/tv_menu_lasttime"
+            style="@style/set_text"
+            android:layout_alignBottom="@+id/ibtn_menu_head"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ibtn_menu_head"
+            android:gravity="left"
+            android:text="上一次同步时间在14:30pm"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_menu_username"
+            style="@style/set_text"
+            android:layout_above="@+id/tv_menu_lasttime"
+            android:layout_alignLeft="@+id/tv_menu_lasttime"
+            android:layout_marginBottom="10dp"
+            android:text="超级大坏人" />
+    </RelativeLayout>
+
+    <com.zhlt.g1app.view.ViewXList
+        android:id="@+id/xlistview_menu"
+        style="@style/mw"
+        android:divider="@null"
+        android:listSelector="@null"
+        android:scrollbars="@null" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_album"
+        layout="@layout/frgact_main_title" />
+
+    <com.zhlt.g1app.view.ViewXList
+        android:id="@+id/xListView_album"
+        style="@style/mw"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:paddingTop="10dp"
+        android:scrollbars="@null" >
+    </com.zhlt.g1app.view.ViewXList>
+
+</LinearLayout>

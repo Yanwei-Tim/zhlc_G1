@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_tab_pressed">#8833B5E5</color>
+    <color name="menu_bg">#ff232733</color>
+    <color name="menu_item_bg">#ff191d28</color>
+    <color name="top_title">#ff16a7ba</color>
+    <color name="darktextcolor">#b4b4b4</color>
+    <color name="bluetextcolor">#5cb98c</color>
+    <color name="mainbgcolor">#394250</color>
+    <color name="umeng_socialize_text_title">#464f61</color>
+    <color name="umeng_socialize_divider">#E6E6E6</color>
+    <color name="yellow">#ede90c</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="dialog_outside_start">#11f6f5f5</color>
+    <color name="dialog_outside_end">#ffc7c4c3</color>
+    <color name="bb_gray5">#60000000</color>
+
+    <!-- 全部颜色值 -->
+    <!-- 蓝绿主题风格颜色 -->
+    <color name="bb_cyan">#27a6b9</color>
+    <color name="bb_white">#ffffff</color>
+    <!-- 主题背景颜色 -->
+    <color name="bb_gray0">#efefef</color>
+    <!-- 灰色数字越高颜色越深 -->
+    <color name="bb_gray1">#dbdcdc</color>
+    <color name="bb_gray2">#b4b4b5</color>
+    <color name="bb_gray3">#989898</color>
+    <color name="bb_gray4">#231815</color>
+    <color name="bb_green">#5ebf8a</color>
+    <color name="bb_black">#595757</color>
+    <color name="bb_orange">#ea5514</color>
+
+</resources>

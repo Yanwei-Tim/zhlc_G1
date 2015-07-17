@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">G1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="car_state">状况</string>
+    <string name="camera">视角</string>
+    <string name="community">圈子</string>
+    <string name="settings">我的</string>
+    <string name="set">设置</string>
+    <string name="history_track">历史轨迹</string>
+    <string name="temp">车内温度</string>
+    <string name="airpressure">车内气压</string>
+    <string name="registerg1">注册G1</string>
+    <string name="humidity">车内湿度</string>
+    <string name="ultraviolet">紫外线</string>
+    <string name="start">开始</string>
+    <string name="distance">里程</string>
+    <string name="timeoffset">时常</string>
+    <string name="speed">时速</string>
+    <string name="navi">导航</string>
+    <string name="video">影像</string>
+    <string name="image">图像</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="source">输入起始地</string>
+    <string name="dest">输入目的地</string>
+
+    <!-- login start -->
+    <string name="pass">跳过</string>
+    <string name="hint_phone">输入手机号</string>
+    <string name="hint_password">输入密码</string>
+    <string name="hint_getverif">输入验证码</string>
+    <string name="camera_not_connect">未连接</string>
+    <string name="getverif">获取验证码</string>
+    <string name="sendverif">发送验证码</string>
+    <string name="send">发送</string>
+    <string name="sure">确认</string>
+    <string name="password">密码</string>
+    <string name="set_password">设置密码</string>
+    <string name="confire_password">确认密码</string>
+    <string name="login">登录</string>
+    <string name="register">立即注册</string>
+    <string name="thirdlogin">第三方登录</string>
+    <!-- login end -->
+    <string name="cancle">取消</string>
+    <string name="sureloginout">确定退出登录 ?</string>
+    <string name="name">名字</string>
+    <string name="save">保存</string>
+    <string name="finish">完成</string>
+    <string name="account">账号：</string>
+    <string name="gender">性别</string>
+    <string name="man">男</string>
+        <string name="simplified">简体中文</string>
+    <string name="traditional">繁体中文</string>
+    <string name="woman">女</string>
+    <string name="secret">保密</string>
+    <string name="sign">个性签名</string>
+    <string name="position">地区</string>
+    <string name="change_position">切换城市</string>
+    <string name="location">定位</string>
+    <string name="all">全部</string>
+    <string name="photo">拍照</string>
+    <string name="pickfrommobile">从手机相册选择</string>
+    <string name="album">相册</string>
+    <string name="about">关于我们</string>
+    <string name="carmodel">选择车型</string>
+    <string name="person">个人资料</string>
+    <string name="edit">编辑</string>
+    <string name="help">帮助</string>
+    <string name="camera_connect">摄像机设置</string>
+    <string name="appstore">存储管理</string>
+    <string name="space">存储空间</string>
+    <string name="language">语言</string>
+    <string name="offline_map">离线地图</string>
+    <string name="auto_download">自动下载拍照文件</string>
+    <string name="connect_first">请先连接设备</string>
+    <string name="reserved_space_available">预留可用空间</string>
+    <string name="reserved_space_available_hint">如果剩余存储空间小于预留可用空间，本程序不再下载</string>
+    <string name="total_space">总容量</string>
+    <string name="available">可用</string>
+    <string name="other">其他</string>
+    <string name="g1info">G1仅占据%1s内存空间，建议清理手机其他应用和数据</string>
+    <string name="look_space">查看存储空间</string>
+    <string name="picture">图片</string>
+    <string name="film">视频</string>
+    <string name="collect">收藏</string>
+    <string name="search">搜索</string>
+    <string name="versioninfo">版本信息</string>
+    <string name="intruduce">功能介绍</string>
+    <string name="contactus">联系我们</string>
+    <string name="fast">快速入门</string>
+    <string name="problem">常见问题</string>
+    <string name="operation">操作手册</string>
+    <string name="service">服务条款</string>
+    <string name="feedback">问题反馈</string>
+    <string name="update">更新版本</string>
+    <string name="upgrade">发现到新版本，是否更新 ?</string>
+    <string name="upgrade_latter">稍后再说</string>
+    <string name="upgrade_now">立即更新</string>
+    <string name="company">中和联创（隆泰）智能科技有限公司</string>
+    <string name="wifi">wifi 管理</string>
+    <string name="Seting">设置</string>
+    <string name="common">通用</string>
+    <string name="changepassword">修改密码</string>
+    <string name="loginout">注销</string>
+    <string name="charge">充值</string>
+    <string name="head">头像</string>
+    <string name="phone">绑定手机</string>
+    <string name="receiveurgentcall">接受紧急求助通知</string>
+    <string name="receivehistoryshare">接受分享轨迹通知</string>
+    <string name="receivenews">接受新消息通知</string>
+    <string name="voice">声音</string>
+    <string name="shock">震动</string>
+    <string name="messagefontsize">消息字体大小</string>
+    <string name="unitlength">长度单位</string>
+    <string name="clearmessage">清空消息记录</string>
+    <string name="big">大</string>
+    <string name="normal">中</string>
+    <string name="small">小</string>
+    <string name="metric">公制</string>
+    <string name="inch">英制</string>
+    <string name="unkown">未知版本</string>
+    <string name="confire_last_password">验证原密码</string>
+    <string name="input_last_password">为保障你的数据安全，请填写原密码</string>
+    <string name="services">\t请务必认真阅读和理解本《Gobabymobile软件产品许可使用协议》（以下简称《协议》）中规定的所有权利和限制。除非您接收本《协议》条款，否则您无权下载、安装或使用Gobabymobile软件（以下简称"本软件"）及其相关服务。您一旦安装、复制、下载、访问或以其它方式使用本软件产品，将视为对本《协议》的接受，即表示您同意接受本《协议》各项条款的约束。如果您不同意本《协议》中的条款，请不要安装、复制或使用本软件。
+\n本《协议》是用户与深圳市中和隆泰有限公司(下称 "Gobabymobile" )之间关于用户下载、安装、使用、复制随附本《协议》的软件法律协议。
+\n一、	\t\t权利声明
+\n本软件的一切知识产权，以及与软件相关的所有信息内容，包括但不限于：文字表述及其组合、图标、图饰、图像、图标、色彩、界面设计、版面框架、有关数据、附加程序、印刷材料或电子文档等均为Gobabymobile所有，著作权和国际著作权条约以及其他知识产权法律法规的保护。
+\n二、	\t\t许可范围
+\n2.1安装和使用：本软件为随 " Gobabymobile " （以下简称"硬件设备"）的配套使用软件，用户需与"硬件设备"一起方可使用本软件。
+\n2.2复制、分发和传播：用户可以非商业性、无限制数量地复制、分发和传播本软件产品。但必须保证每一份复制、分发和传播都是完整和真实的，包括所有关本软件产品的软件、电子文档，版权和商标，亦包括本协议。如用户超越本许可范围，对本软件各项服务进行销售或用于其他商业用途，Gobabymobile有权不通知用户立即终止向用户提供产品和服务，并依法追究其法律责任，要求其赔偿Gobabymobile的一切损失。\n</string>
+    <string name="fast_room">\n1. 内置无线WIFI发射模块，所以即使没有屏幕也可以连接手机和平板电脑来查看行车视频
+\n\n2. 在与手机连接之前我们需要为手机安装应用程序
+\n\n3. 程序安装成功后，我们需要将至手机。主机的WIFI键按下即为开启WIFI，此时WIFI指示灯一周的蓝色荧光灯闪烁，打开手机WIFI后可以搜索到WIFI热点。此时输入
+\n\n4.应用程序不仅是为了查看校正行车角度，还为我们带来了行车记录仪基本的设置菜单。音频等常见的行车记录选项，而且通过手机操作非常顺应我们现在的操作习惯，体现出了产品的人性化和创新亮点。。
+\n\n5. 如果您的SIM 卡开启了PIN 码验证功能，请在管理网页的设置页面输入正确的PIN\n</string>
+    <string name="fun">1、状况：支持4G网络，随时随地打开手机APP，不需要汽车启动，就能瞬间看到车内车外一切，车窗是否关好，汽车是否安全，体验身临其境的感觉
+
+\n\n2、	视角：实时浏览行车画面、将行车记录仪录像下载到手机或PAD、查看视频预览、回放抓拍图片。
+
+\n\n3、圈子：旅途抓拍美景可以分享给多位朋友、家人，只要手机装上APP应用程序，就能和你朋友、家人一起分享，每一个动人时刻你都可以与他们实时分享。\n</string>
+    <string name="hint_feedback">输入您的建议，我们会为您不断改进产品</string>
+    <string name="hint_feedback_phone">您的手机号</string>
+    <string name="please_input_phone">请输入您的手机号</string>
+</resources>

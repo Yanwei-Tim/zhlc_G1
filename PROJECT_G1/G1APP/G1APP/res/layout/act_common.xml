@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_about"
+        layout="@layout/frgact_main_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            style="@style/mm"
+            android:layout_marginLeft="@dimen/item_marginleft"
+            android:layout_marginRight="@dimen/item_marginleft"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llyt_common_receiveurgentcall"
+                style="@style/subset_item" >
+
+                <TextView
+                    style="@style/set_text"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/item_marginleft"
+                    android:layout_weight="1"
+                    android:text="@string/receiveurgentcall" />
+
+                <SeekBar
+                    android:id="@+id/sb_common_receiveurgentcall"
+                    style="@style/seekbar_subset"
+                    android:layout_width="68dp"
+                    android:progressDrawable="@drawable/selector_common_progessdrawable" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llyt_common_receivehistoryshare"
+                style="@style/subset_item" >
+
+                <TextView
+                    style="@style/set_text"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/item_marginleft"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/receivehistoryshare"
+                    android:textSize="@dimen/text_size_big" />
+
+                <SeekBar
+                    android:id="@+id/sb_common_receivehistoryshare"
+                    style="@style/seekbar_subset"
+                    android:layout_width="68dp"
+                    android:progressDrawable="@drawable/selector_common_progessdrawable" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llyt_common_receivenews"
+                style="@style/subset_item" >
+
+                <TextView
+                    style="@style/set_text"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/item_marginleft"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/receivenews"
+                    android:textSize="@dimen/text_size_big" />
+
+                <SeekBar
+                    android:id="@+id/sb_common_receivenews"
+                    style="@style/seekbar_subset"
+                    android:layout_width="68dp"
+                    android:progressDrawable="@drawable/selector_common_progessdrawable" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/mw"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/act_name_edit_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llyt_common_voice"
+                    style="@style/subset_item"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/cust_btnbg_all" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/item_marginleft"
+                        android:layout_weight="1"
+                        android:text="@string/voice"
+                        android:textColor="@color/bb_black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <SeekBar
+                        android:id="@+id/sb_common_voice"
+                        style="@style/seekbar_subset"
+                        android:layout_width="68dp"
+                        android:progressDrawable="@drawable/selector_common_progessdrawable" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/item_marginleft"
+                    android:layout_marginRight="@dimen/item_marginleft"
+                    android:background="@drawable/line_dark" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_common_shock"
+                    style="@style/subset_item"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/cust_btnbg_all" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/shock"
+                        android:textColor="@color/bb_black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <SeekBar
+                        android:id="@+id/sb_common_shock"
+                        style="@style/seekbar_subset"
+                        android:layout_width="68dp"
+                        android:progressDrawable="@drawable/selector_common_progessdrawable" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/mw"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/act_name_edit_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llyt_common_messagefontsize"
+                    style="@style/subset_item"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/cust_btnbg_all" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/item_marginleft"
+                        android:layout_weight="1"
+                        android:text="@string/messagefontsize"
+                        android:textColor="@color/bb_black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <RadioGroup
+                        android:id="@+id/r_rg_common_fontsize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/r_rb_common_big"
+                            style="@style/MyRadioButton"
+                            android:checked="true"
+                            android:drawablePadding="2dp"
+                            android:drawableRight="@drawable/selector_message_fontsize"
+                            android:text="@string/big" />
+
+                        <RadioButton
+                            android:id="@+id/r_rb_common_normal"
+                            style="@style/MyRadioButton"
+                            android:drawablePadding="2dp"
+                            android:drawableRight="@drawable/selector_message_fontsize"
+                            android:text="@string/normal" />
+
+                        <RadioButton
+                            android:id="@+id/r_rb_common_small"
+                            style="@style/MyRadioButton"
+                            android:drawablePadding="2dp"
+                            android:drawableRight="@drawable/selector_message_fontsize"
+                            android:text="@string/small" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/item_marginleft"
+                    android:layout_marginRight="@dimen/item_marginleft"
+                    android:background="@drawable/line_dark" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_common_unit"
+                    style="@style/subset_item"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/cust_btnbg_all" >
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/shock"
+                        android:textColor="@color/bb_black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <RadioGroup
+                        android:id="@+id/r_rg_common_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/r_rb_common_metric"
+                            style="@style/MyRadioButton"
+                            android:checked="true"
+                            android:drawablePadding="2dp"
+                            android:drawableRight="@drawable/selector_message_fontsize"
+                            android:text="@string/metric" />
+
+                        <RadioButton
+                            android:id="@+id/r_rb_common_inch"
+                            style="@style/MyRadioButton"
+                            android:drawablePadding="2dp"
+                            android:drawableRight="@drawable/selector_message_fontsize"
+                            android:text="@string/inch" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

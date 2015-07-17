@@ -1,0 +1,85 @@
+<com.zhlt.g1app.view.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlyt_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrgActMain" >
+
+    <include
+        android:id="@+id/r_icl_title"
+        layout="@layout/frgact_main_title" />
+
+    <RadioGroup
+        android:id="@+id/r_rg_frg_act_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layer_menu"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/r_rb_car_state"
+            style="@style/MyRadioButton"
+            android:drawableTop="@drawable/selector_frgact_main_car_state"
+            android:text="@string/car_state" />
+
+        <RadioButton
+            android:id="@+id/r_rb_camera"
+            style="@style/MyRadioButton"
+            android:drawableTop="@drawable/selector_frgact_main_camera"
+            android:text="@string/camera" />
+
+        <RadioButton
+            android:id="@+id/r_rb_community"
+            style="@style/MyRadioButton"
+            android:drawableTop="@drawable/selector_frgact_main_community"
+            android:text="@string/community" />
+
+        <RadioButton
+            android:id="@+id/r_rb_settings"
+            style="@style/MyRadioButton"
+            android:drawableTop="@drawable/selector_frgact_main_settings"
+            android:text="@string/settings" />
+    </RadioGroup>
+
+    <com.zhlt.g1app.view.ViewPagerScroll
+        android:id="@+id/r_vps_frg_act_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/r_rg_frg_act_main"
+        android:layout_below="@+id/r_icl_title" />
+
+    <RelativeLayout
+        android:id="@+id/llyt_main_comment"
+        style="@style/mw"
+        android:layout_height="@dimen/footer_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_bg_shape"
+        android:minHeight="@dimen/footer_height"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/edit_main_comment"
+            style="@style/mw"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/marginleft"
+            android:layout_toLeftOf="@+id/btn_main_comment_send"
+            android:background="@drawable/bg_community_comment"
+            android:paddingLeft="5dp"
+            android:textCursorDrawable="@drawable/password_cursor" />
+
+        <Button
+            android:id="@+id/btn_main_comment_send"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="@dimen/marginleft"
+            android:background="@drawable/selector_send_comment"
+            android:text="@string/send"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</com.zhlt.g1app.view.KeyboardListenRelativeLayout>

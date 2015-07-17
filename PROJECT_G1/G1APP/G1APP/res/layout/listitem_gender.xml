@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_item_height"
+        android:background="@drawable/cust_btnbg_all" >
+
+        <TextView
+            android:id="@+id/tv_gender_listitem_name"
+            style="@style/set_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="asdf"
+            android:textSize="@dimen/text_size_bigger" />
+
+        <ImageButton
+            android:id="@+id/ibtn_gender_listitem_select"
+            style="@style/ibtn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/listitem_go_marginright"
+            android:src="@drawable/act_gender_selected" />
+
+        <ImageView
+            android:id="@+id/iv_gender_listitem_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listitem_line_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/darktextcolor" />
+    </RelativeLayout>
+
+</LinearLayout>

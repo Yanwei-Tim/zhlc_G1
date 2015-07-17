@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/item_marginleft" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_marginleft"
+        android:background="@drawable/act_name_edit_bg"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingTop="@dimen/item_marginleft" >
+
+        <TextView
+            android:id="@+id/tv_carmodel_item_name"
+            style="@style/set_text"
+            android:layout_marginLeft="@dimen/item_marginleft"
+            android:text="A" />
+
+        <ImageView
+            style="@style/list_line"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:id="@+id/llyt_carmodel_item"
+            style="@style/mw"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

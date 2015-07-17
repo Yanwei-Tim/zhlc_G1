@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/frgact_main_title" />
+
+    <com.zhlt.g1app.view.ViewXList
+        android:id="@+id/xListView_person"
+        style="@style/mw"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:divider="@drawable/line_dark"
+        android:dividerHeight="2dp"
+        android:background="@drawable/shape_listcorner" >
+    </com.zhlt.g1app.view.ViewXList>
+
+</LinearLayout>

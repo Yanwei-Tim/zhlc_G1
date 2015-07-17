@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="car_hot_width">110dp</dimen>
+    <dimen name="car_hot_height">54dp</dimen>
+    <dimen name="real_play_width">100dp</dimen>
+    <dimen name="real_play_height">100dp</dimen>
+    <dimen name="dialog_connect_height">100dp</dimen>
+    <dimen name="dialog_button_height">50dp</dimen>
+    <dimen name="dialog_button_right_height">51dp</dimen>
+    
+     <dimen name="dialog_upgrade_height">120dp</dimen>
+    
+    <!-- 全部字体大小 -->
+    <dimen name="text_size_buge">30sp</dimen>
+    <!-- 超大 -->
+    <dimen name="text_size_biggest">22sp</dimen>
+    <!-- 大 -->
+    <dimen name="text_size_bigger">20sp</dimen>
+    <!-- 中大 -->
+    <dimen name="text_size_big">16sp</dimen>
+    <!-- 中 -->
+    <dimen name="text_size_middle">13sp</dimen>
+    <!-- 小 -->
+    <dimen name="text_size_small">10sp</dimen>
+    <!-- 极小 -->
+    <dimen name="text_size_tiny">8sp</dimen>
+
+    <!-- 全部间距 -->
+    <!-- 主体界面边框间距 -->
+    <dimen name="main_border">5dp</dimen>
+    <!-- 文字图标等统一间距 -->
+    <dimen name="item_border">8dp</dimen>
+    <!-- 页眉页脚高度 -->
+    <dimen name="header_height">45dp</dimen>
+    <dimen name="footer_height">63dp</dimen>
+    <dimen name="banner_height">35dp</dimen>
+    <!-- 播放轨迹按钮位置 -->
+    <dimen name="playtrack_margin">88dp</dimen>
+    <dimen name="loc_margin">40dp</dimen>
+    <dimen name="community_margin">10dp</dimen>
+    <dimen name="community_header_height">180dp</dimen>
+    <dimen name="community_item_height">150dp</dimen>
+    <dimen name="button_width">80dp</dimen>
+    <dimen name="sidebar_margintop">50dp</dimen>
+
+</resources>

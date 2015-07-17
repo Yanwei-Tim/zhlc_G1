@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/frgact_main_title" />
+
+    <RadioGroup
+        android:id="@+id/r_rg_frg_act_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <!-- android:text="@string/car_state" -->
+
+        <RadioButton
+            android:id="@+id/r_rb_wifi_chang"
+            style="@style/MyRadioButton"
+            android:background="@drawable/selector_wifi_radio"
+            android:checked="true"
+            android:gravity="center"
+            android:text="流量充值"
+            android:textSize="@dimen/text_size_big" />
+
+        <RadioButton
+            android:id="@+id/r_rb_wifi_password"
+            style="@style/MyRadioButton"
+            android:background="@drawable/selector_wifi_radio"
+            android:drawablePadding="1dp"
+            android:text="修改WIFI名称密码"
+            android:textSize="@dimen/text_size_big" />
+
+    </RadioGroup>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_tab_pressed">#8833B5E5</color>
+    <color name="menu_bg">#ff232733</color>
+    <color name="menu_item_bg">#ff191d28</color>
+    <color name="top_title">#ff16a7ba</color>
+    <color name="darktextcolor">#b4b4b4</color>
+    <color name="bluetextcolor">#0fa7bc</color>
+    <color name="mainbgcolor">#394250</color>
+    <color name="umeng_socialize_text_title">#464f61</color>
+    <color name="umeng_socialize_divider">#E6E6E6</color>
+
+</resources>

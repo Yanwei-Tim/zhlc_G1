@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zhlc.app.dao.IUtilDao">
+
+	<!-- 发送手机验证码时注册 -->
+	<insert id="insertCheckCode" parameterType="Map">
+		<![CDATA[
+			INSERT INTO t_checkcode(
+				mobile,
+				checkcode,
+				ip,
+				createtime,
+				expiretime,
+				state
+			)VALUES(
+				#{mobile},
+				#{checkcode},
+				#{ip},
+				now(),
+				#{expiretime},
+				#{state}
+			)
+		]]>
+	</insert>
+	
+	<!-- 查询验证码 -->
+	<select id="queryByMap" resultType="String" parameterType="Map">
+		<![CDATA[
+			select count(0) from t_checkcode where mobile = #{mobile} and checkcode = #{checkcode} and DATE_FORMAT(createtime,'%Y-%m-%d') = #{createtime}
+		]]>
+	</select>
+
+</mapper>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+          android:paddingLeft="@dimen/marginleft"
+        android:background="@drawable/cust_btnbg_all" >
+
+        <ImageView
+            android:id="@+id/iv_carmodel_item_car_image"
+            style="@style/ww"
+            android:layout_width="77dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/car_02" />
+
+        <TextView
+            android:id="@+id/tv_carmodel_item_car_name"
+            style="@style/set_text"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="马丁" />
+
+        <ImageView
+            android:id="@+id/iv_carmodel_item_line"
+            style="@style/list_line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_carmodel_item_car_image" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+2015-07-10 17:43:00[TcpServerHandlerCar] [nioEventLoopGroup-3-1:2920820] - [ERROR]  server err  close imei:null   key:null
+2015-07-10 17:43:00[TcpServerHandlerCar] [nioEventLoopGroup-3-2:2920827] - [ERROR]  server err  close imei:null   key:null
